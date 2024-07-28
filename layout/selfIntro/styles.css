@@ -1,0 +1,222 @@
+.selfIntroApply {
+    font-size: 20px;
+    color: #353232;
+    text-align: center;
+    padding: 5px;
+    margin: 0 10%;
+    font-family: 'Poppins', sans-serif;
+    font:bold;
+}
+
+.selfIntroLinks {
+    font-size: 20px;
+    color: #353232;
+    text-align: center;
+    padding: 10px;
+    margin: 0 20%;
+    font-family: 'Poppins', sans-serif;
+    font:bold;
+}
+
+.selfIntroLinks a{
+    color: #5d6b4e;
+    text-decoration: none;
+}
+
+.page{
+	height: 100vh; 
+	overflow: auto;
+	position: relative;
+}
+
+body {
+    background: linear-gradient(to bottom, #426B69, #8BB174);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.bodyBigtext {
+    font-size: 40px;
+    color: #353232;
+    text-align: center;
+    padding: 1px;
+    font-family: 'Poppins', sans-serif;
+    font:bold;
+}
+
+.bodyChineseBigtext {
+    font-size: 40px;
+    color: #353232;
+    text-align: center;
+    padding: 5px;
+    font-family: 'Noto Serif SC', serif;
+    font-weight: bold;
+}
+
+.bodyMidtext {
+    font-size: 30px;
+    color: #353232;
+    text-align: center;
+    padding: 5px;
+    font-family: 'Poppins', sans-serif;
+    font:bold;
+}
+
+.bodytext {
+    font-size: 17px;
+    color: #353232;
+    text-align: center;
+    padding: 5px;
+    margin: 0 10%;
+    font-family: 'Montserrat', sans-serif;
+    text-align:start;
+}
+
+.bodytext a{
+    text-decoration: underline;
+    color: #5d6b4e;
+}
+
+.bodytext a:hover {
+    text-decoration: none;
+}
+
+img {
+    width: 30%; 
+    height: auto; 
+    overflow: hidden;
+    border-radius: 50%;
+    display: block;
+    padding: 3%;
+    box-shadow: 10px 0 20px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+    margin: 1% auto;
+    position: relative;
+    z-index: 1;
+	justify-content: center;
+	max-width: 100%;
+}
+
+.square {
+    width: 50%;
+    height: 100%;
+    background: #ffffff;
+    position:relative;
+    margin-top: 6%;
+    margin-left: 25%;
+    margin-bottom: 5%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px; /* 圆角 */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* 阴影 */
+}
+
+.button-container {
+    position: absolute; /* 设置绝对定位 */
+    top: 1%; /* 距离顶部的距离 */
+    right: 3%; /* 距离右侧的距离 */
+    gap: 20px;
+    display: flex;
+    flex-direction: row; /* 将按钮水平排列 */
+}
+
+.button {
+    width: 120px;
+    height: 60px;
+    background-color: transparent;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.button:hover {
+    transform: scale(1.1);
+}
+
+.button span {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.button-container a{
+	text-decoration: none;
+}
+
+@media screen and (max-width: 1200px) {
+	.square {
+		margin-top: 25%;
+        margin-left: 5%;
+		width: 90%;
+	}
+
+    img{
+        width: 40%; /* 设置图片容器的宽度 */
+        height: auto; /* 设置图片容器的高度 */
+        padding: 10%;
+        box-shadow: 10px 0 20px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+        border-radius: 50%;
+        margin-bottom: 10%;
+        margin-left: 20%;
+    }
+
+    .button-container {
+        top: 3%; /* 调整按钮距离顶部的距离 */
+        margin-left: 53%;
+        position: absolute;
+    }
+
+    .button {
+        width: 60px;
+        height: 40px;
+        margin-bottom: 10px; /* 调整按钮之间的间距 */
+    }
+
+    .button span {
+        font-size: 10px;
+    }
+
+    .bodyBigtext {
+        font-size: 30px;
+        padding: 1px;
+        margin: 0 5%;
+    }
+    
+    .bodyChineseBigtext {
+        font-size: 20px;
+        padding: 1px;
+        margin: 0 10%;
+    }
+
+    .bodyMidtext {
+        font-size: 15px;
+        padding: 1px;
+        margin: 0 10%;
+    }
+
+    .bodytext {
+        font-size: 15px;
+        padding: 1px;
+        margin: 0 10%;
+    }
+
+    .selfIntroApply {
+        font-size: 10px;
+        padding: 5px;
+        margin: 0 5%;
+    }
+    
+    .selfIntroLinks {
+        font-size: 10px;
+        padding: 5px;
+        margin: 0 5%;
+    }
+}
