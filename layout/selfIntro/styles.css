@@ -5,7 +5,7 @@
     padding: 5px;
     margin: 0 10%;
     font-family: 'Poppins', sans-serif;
-    font:bold;
+    font: bold;
 }
 
 .selfIntroLinks {
@@ -15,18 +15,18 @@
     padding: 10px;
     margin: 0 20%;
     font-family: 'Poppins', sans-serif;
-    font:bold;
+    font: bold;
 }
 
-.selfIntroLinks a{
+.selfIntroLinks a {
     color: #5d6b4e;
     text-decoration: none;
 }
 
-.page{
-	height: 100vh; 
-	overflow: auto;
-	position: relative;
+.page {
+    height: 100vh;
+    overflow: auto;
+    position: relative;
 }
 
 body {
@@ -34,7 +34,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
     overflow: hidden;
@@ -46,7 +47,7 @@ html, body {
     text-align: center;
     padding: 1px;
     font-family: 'Poppins', sans-serif;
-    font:bold;
+    font: bold;
 }
 
 .bodyChineseBigtext {
@@ -64,7 +65,7 @@ html, body {
     text-align: center;
     padding: 5px;
     font-family: 'Poppins', sans-serif;
-    font:bold;
+    font: bold;
 }
 
 .bodytext {
@@ -74,10 +75,10 @@ html, body {
     padding: 5px;
     margin: 0 10%;
     font-family: 'Montserrat', sans-serif;
-    text-align:start;
+    text-align: start;
 }
 
-.bodytext a{
+.bodytext a {
     text-decoration: underline;
     color: #5d6b4e;
 }
@@ -87,41 +88,48 @@ html, body {
 }
 
 img {
-    width: 30%; 
-    height: auto; 
+    width: 30%;
+    height: auto;
     overflow: hidden;
     border-radius: 50%;
     display: block;
     padding: 3%;
-    box-shadow: 10px 0 20px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+    box-shadow: 10px 0 20px rgba(0, 0, 0, 0.1);
+    /* 添加阴影效果 */
     margin: 1% auto;
     position: relative;
     z-index: 1;
-	justify-content: center;
-	max-width: 100%;
+    justify-content: center;
+    max-width: 100%;
 }
 
 .square {
     width: 50%;
-    height: 100%;
+    height: 200%;
     background: #ffffff;
-    position:relative;
+    position: relative;
     margin-top: 6%;
     margin-left: 25%;
     margin-bottom: 5%;
     justify-content: center;
     align-items: center;
-    border-radius: 40px; /* 圆角 */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* 阴影 */
+    border-radius: 40px;
+    /* 圆角 */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    /* 阴影 */
 }
 
 .button-container {
-    position: absolute; /* 设置绝对定位 */
-    top: 1%; /* 距离顶部的距离 */
-    right: 3%; /* 距离右侧的距离 */
+    position: absolute;
+    /* 设置绝对定位 */
+    top: 1%;
+    /* 距离顶部的距离 */
+    right: 3%;
+    /* 距离右侧的距离 */
     gap: 20px;
     display: flex;
-    flex-direction: row; /* 将按钮水平排列 */
+    flex-direction: row;
+    /* 将按钮水平排列 */
 }
 
 .button {
@@ -147,29 +155,33 @@ img {
     color: #ffffff;
 }
 
-.button-container a{
-	text-decoration: none;
+.button-container a {
+    text-decoration: none;
 }
 
 @media screen and (max-width: 1200px) {
-	.square {
-		margin-top: 25%;
+    .square {
+        margin-top: 25%;
         margin-left: 5%;
-		width: 90%;
-	}
+        width: 90%;
+    }
 
-    img{
-        width: 40%; /* 设置图片容器的宽度 */
-        height: auto; /* 设置图片容器的高度 */
+    img {
+        width: 40%;
+        /* 设置图片容器的宽度 */
+        height: auto;
+        /* 设置图片容器的高度 */
         padding: 10%;
-        box-shadow: 10px 0 20px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+        box-shadow: 10px 0 20px rgba(0, 0, 0, 0.1);
+        /* 添加阴影效果 */
         border-radius: 50%;
         margin-bottom: 10%;
         margin-left: 20%;
     }
 
     .button-container {
-        top: 3%; /* 调整按钮距离顶部的距离 */
+        top: 3%;
+        /* 调整按钮距离顶部的距离 */
         margin-left: 53%;
         position: absolute;
     }
@@ -177,7 +189,8 @@ img {
     .button {
         width: 60px;
         height: 40px;
-        margin-bottom: 10px; /* 调整按钮之间的间距 */
+        margin-bottom: 10px;
+        /* 调整按钮之间的间距 */
     }
 
     .button span {
@@ -189,7 +202,7 @@ img {
         padding: 1px;
         margin: 0 5%;
     }
-    
+
     .bodyChineseBigtext {
         font-size: 20px;
         padding: 1px;
@@ -213,7 +226,7 @@ img {
         padding: 5px;
         margin: 0 5%;
     }
-    
+
     .selfIntroLinks {
         font-size: 10px;
         padding: 5px;
