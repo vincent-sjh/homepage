@@ -34,7 +34,7 @@ header {
 }
 
 .square1:hover {
-  background-color: #0c25e6;
+  background-color: #14ceeb;
   /* 设置方块背景颜色 */
   transform: scale(1.05);
 }
