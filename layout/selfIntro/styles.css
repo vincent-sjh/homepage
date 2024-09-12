@@ -27,6 +27,7 @@
     height: 100vh;
     overflow: auto;
     position: relative;
+    background: linear-gradient(to left, #8f7394, #34032f);
 }
 
 body {

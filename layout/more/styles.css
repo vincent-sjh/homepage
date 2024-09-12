@@ -1,7 +1,9 @@
 .page {
-  height: 100vh; /* Set container height to 100% of viewport height */
+  height: 100vh;
+  /* Set container height to 100% of viewport height */
   overflow: auto;
   position: relative;
+  background: linear-gradient(to left, #8f7394, #34032f);
 }
 
 html,
@@ -9,16 +11,20 @@ body {
   height: 100vh;
   margin: 0;
   overflow: hidden;
-  background: linear-gradient(to bottom, #426b69, #8bb174);
+  background: linear-gradient(to bottom, #8f7394, #34032f);
 }
 
 .button-container {
-  position: absolute; /* 设置绝对定位 */
-  top: 1%; /* 距离顶部的距离 */
-  right: 5%; /* 距离右侧的距离 */
+  position: absolute;
+  /* 设置绝对定位 */
+  top: 1%;
+  /* 距离顶部的距离 */
+  right: 5%;
+  /* 距离右侧的距离 */
   gap: 20px;
   display: flex;
-  flex-direction: row; /* 将按钮水平排列 */
+  flex-direction: row;
+  /* 将按钮水平排列 */
 }
 
 .button {
@@ -72,6 +78,7 @@ body {
   font-family: "Montserrat", sans-serif;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+
 .bodytext {
   font-size: 20px;
   color: #ffffff;
@@ -113,6 +120,7 @@ body {
   vertical-align: middle;
   text-align: center;
 }
+
 .section-image-large {
   padding: 10px;
   vertical-align: middle;
@@ -182,8 +190,10 @@ body {
   font-family: "Montserrat", sans-serif;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+
 .photoContainer .imageWithCaption {
-  width: 30%; /* 和原来图片的宽度一样 */
+  width: 30%;
+  /* 和原来图片的宽度一样 */
   margin-bottom: 20px;
 }
 

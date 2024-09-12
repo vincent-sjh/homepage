@@ -1,7 +1,9 @@
-.page{
-	height: 100vh; /* Set container height to 100% of viewport height */
+.page {
+	height: 100vh;
+	/* Set container height to 100% of viewport height */
 	overflow: auto;
 	position: relative;
+	background: linear-gradient(to left, #8f7394, #34032f);
 }
 
 .section-table {
@@ -14,17 +16,17 @@
 }
 
 .content-table {
-    width: 80%;
-    border: 0px;
-    border-spacing: 0px;
-    border-collapse: separate;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 1%;
-    background-color: #ffffff;
-    border-radius: 20px;
-    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
-    margin-top: 5%;
+	width: 80%;
+	border: 0px;
+	border-spacing: 0px;
+	border-collapse: separate;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 1%;
+	background-color: #ffffff;
+	border-radius: 20px;
+	box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+	margin-top: 5%;
 	margin-bottom: 5%;
 }
 
@@ -44,6 +46,7 @@
 	vertical-align: middle;
 	text-align: center;
 }
+
 .section-image-large {
 	padding: 10px;
 	vertical-align: middle;
@@ -69,7 +72,7 @@
 	margin-bottom: 5px;
 }
 
-.section-title a{
+.section-title a {
 	color: rgb(28, 38, 35);
 }
 
@@ -79,8 +82,8 @@
 	margin-bottom: 5px;
 }
 
-.section-second-title a{
-	color:rgb(28, 38, 35);
+.section-second-title a {
+	color: rgb(28, 38, 35);
 }
 
 
@@ -91,7 +94,7 @@
 	font-family: 'Montserrat', sans-serif;
 }
 
-.section-details a{
+.section-details a {
 	color: rgb(28, 38, 35);
 }
 
@@ -109,45 +112,49 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
-html, body {
+html,
+body {
 	height: 100%;
 	margin: 0;
 	overflow: hidden;
 }
 
 .button-container {
-    position: absolute; /* 将位置固定在屏幕上 */
-    top: 1%; /* 距离顶部的距离 */
-    right: 5%; /* 距离右侧的距离 */
-    gap: 20px;
-    display: flex;
+	position: absolute;
+	/* 将位置固定在屏幕上 */
+	top: 1%;
+	/* 距离顶部的距离 */
+	right: 5%;
+	/* 距离右侧的距离 */
+	gap: 20px;
+	display: flex;
 
 }
 
 .button {
-    width: 120px;
-    height: 60px;
-    background-color: transparent;
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-    transition: transform 0.2s ease-in-out;
-    cursor: pointer;
+	width: 120px;
+	height: 60px;
+	background-color: transparent;
+	border-radius: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+	transition: transform 0.2s ease-in-out;
+	cursor: pointer;
 }
 
 .button:hover {
-    transform: scale(1.1);
+	transform: scale(1.1);
 }
 
 .button span {
-    font-size: 14px;
-    font-weight: bold;
-    color: #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	color: #ffffff;
 }
 
-.button-container a{
+.button-container a {
 	text-decoration: none;
 }
 
@@ -157,22 +164,25 @@ html, body {
 		width: 90%;
 	}
 
-    .button-container {
-        top: 1%; /* 调整按钮距离顶部的距离 */
-        margin-left: 50%;
-        margin-right: 7%; /* 调整按钮距离右侧的距离 */
-        position: absolute;
-    }
+	.button-container {
+		top: 1%;
+		/* 调整按钮距离顶部的距离 */
+		margin-left: 50%;
+		margin-right: 7%;
+		/* 调整按钮距离右侧的距离 */
+		position: absolute;
+	}
 
-    .button {
-        width: 60px;
-        height: 40px;
-        margin-bottom: 10px; /* 调整按钮之间的间距 */
-    }
+	.button {
+		width: 60px;
+		height: 40px;
+		margin-bottom: 10px;
+		/* 调整按钮之间的间距 */
+	}
 
-    .button span {
-        font-size: 10px;
-    }
+	.button span {
+		font-size: 10px;
+	}
 
 	.section-image-large iframe {
 		width: 320px;
@@ -180,7 +190,7 @@ html, body {
 	}
 
 	.section-image-large,
-  	.section-content {
-    	display: block;
+	.section-content {
+		display: block;
 	}
 }

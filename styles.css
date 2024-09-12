@@ -18,7 +18,7 @@ header {
 .square1 {
   width: 40%;
   height: 80%;
-  background-color: rgb(180, 201, 140);
+  background-color: rgb(54, 36, 215);
   /* 设置方块背景颜色 */
   display: flex;
   justify-content: center;
@@ -80,7 +80,7 @@ header {
 .square2 {
   width: 40%;
   height: 40%;
-  background: linear-gradient(to bottom, #8bb174, #426b69);
+  background: linear-gradient(to bottom, #a71418, #8617e0);
   position: absolute;
   top: 105%;
   right: 9%;
@@ -124,7 +124,7 @@ header {
 .square3 {
   width: 40%;
   height: 30%;
-  background: linear-gradient(to bottom, #426b69, #8bb174);
+  background: linear-gradient(to bottom, #03044d, #8bb174);
   position: absolute;
   top: 153%;
   left: 7%;
@@ -146,7 +146,7 @@ header {
 
 .square3 square3t1 {
   font-size: 4em;
-  color: #ffffff;
+  color: #9f0e68;
   text-align: center;
   margin: 10%;
   padding: 10px;
