@@ -18,7 +18,7 @@ header {
 .square1 {
   width: 40%;
   height: 80%;
-  background-color: rgb(44, 23, 226);
+  background-color: rgb(72, 6, 105);
   /* 设置方块背景颜色 */
   display: flex;
   justify-content: center;
@@ -34,7 +34,7 @@ header {
 }
 
 .square1:hover {
-  background-color: #87bba2;
+  background-color: #0c25e6;
   /* 设置方块背景颜色 */
   transform: scale(1.05);
 }
@@ -52,7 +52,7 @@ header {
 
 .square1 square1t1 a {
   text-decoration: none;
-  color: #222e50;
+  color: #13c7be;
   /* 设置链接颜色 */
 }
 
