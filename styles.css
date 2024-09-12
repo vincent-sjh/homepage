@@ -9,7 +9,8 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  background-color: #333; /* 设置头部背景颜色 */
+  background-color: #333;
+  /* 设置头部背景颜色 */
   padding: 20px;
 }
 
@@ -17,12 +18,15 @@ header {
 .square1 {
   width: 40%;
   height: 80%;
-  background-color: rgb(180, 201, 140); /* 设置方块背景颜色 */
+  background-color: rgb(180, 201, 140);
+  /* 设置方块背景颜色 */
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 40px; /* 圆角 */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* 阴影 */
+  border-radius: 40px;
+  /* 圆角 */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  /* 阴影 */
   float: left;
   margin-left: 5%;
   margin-top: 5%;
@@ -30,7 +34,8 @@ header {
 }
 
 .square1:hover {
-  background-color: #87bba2; /* 设置方块背景颜色 */
+  background-color: #87bba2;
+  /* 设置方块背景颜色 */
   transform: scale(1.05);
 }
 
@@ -47,18 +52,23 @@ header {
 
 .square1 square1t1 a {
   text-decoration: none;
-  color: #222e50; /* 设置链接颜色 */
+  color: #222e50;
+  /* 设置链接颜色 */
 }
 
 .square1 square1t1 img {
-  width: 80%; /* 设置图片容器的宽度 */
-  height: 80%; /* 设置图片容器的高度 */
-  overflow: hidden; /* 隐藏溢出的部分，以显示圆形 */
+  width: 80%;
+  /* 设置图片容器的宽度 */
+  height: 80%;
+  /* 设置图片容器的高度 */
+  overflow: hidden;
+  /* 隐藏溢出的部分，以显示圆形 */
   border-radius: 50%;
   display: block;
   padding: 10%;
   justify-content: center;
-  box-shadow: 10px 0 20px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+  box-shadow: 10px 0 20px rgba(0, 0, 0, 0.1);
+  /* 添加阴影效果 */
   max-width: 100%;
 }
 
@@ -77,13 +87,16 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 40px; /* 圆角 */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* 阴影 */
+  border-radius: 40px;
+  /* 圆角 */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  /* 阴影 */
   transition: transform 0.2s ease-in-out;
 }
 
 .square2:hover {
-  background-color: #93a8ac; /* 设置方块背景颜色 */
+  background-color: #93a8ac;
+  /* 设置方块背景颜色 */
   transform: scale(1.05);
 }
 
@@ -99,7 +112,8 @@ header {
 
 .square2 square2t1 a {
   text-decoration: none;
-  color: #ffffff; /* 设置链接颜色 */
+  color: #ffffff;
+  /* 设置链接颜色 */
 }
 
 .square2 square2t1:hover {
@@ -117,13 +131,16 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 40px; /* 圆角 */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* 阴影 */
+  border-radius: 40px;
+  /* 圆角 */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  /* 阴影 */
   transition: transform 0.2s ease-in-out;
 }
 
 .square3:hover {
-  background-color: #f9db6d; /* 设置方块背景颜色 */
+  background-color: #f9db6d;
+  /* 设置方块背景颜色 */
   transform: scale(1.05);
 }
 
@@ -138,31 +155,38 @@ header {
 }
 
 .square3 square3t1 a {
-  text-decoration: none; /* 去掉下划线 */
-  color: #ffffff; /* 设置链接颜色 */
+  text-decoration: none;
+  /* 去掉下划线 */
+  color: #ffffff;
+  /* 设置链接颜色 */
 }
 
 .square3 square3t1:hover {
   text-decoration: line-through;
 }
+
 /* 设置右下方块的样式 */
 .square4 {
   width: 25%;
   height: 30%;
-  background-color: #222e50; /* 设置方块背景颜色 */
+  background-color: #222e50;
+  /* 设置方块背景颜色 */
   position: absolute;
   top: 115%;
   left: 23%;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 40px; /* 圆角 */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* 阴影 */
+  border-radius: 40px;
+  /* 圆角 */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  /* 阴影 */
   transition: transform 0.2s ease-in-out;
 }
 
 .square4:hover {
-  background-color: #a7c288; /* 设置方块背景颜色 */
+  background-color: #a7c288;
+  /* 设置方块背景颜色 */
   transform: scale(1.05);
 }
 
@@ -177,27 +201,33 @@ header {
 }
 
 .square4 square4t1 a {
-  text-decoration: none; /* 去掉下划线 */
-  color: #ffffff; /* 设置链接颜色 */
+  text-decoration: none;
+  /* 去掉下划线 */
+  color: #ffffff;
+  /* 设置链接颜色 */
 }
 
 .square5 {
   width: 25%;
   height: 30%;
-  background-color: #222e50; /* 设置方块背景颜色 */
+  background-color: #222e50;
+  /* 设置方块背景颜色 */
   position: absolute;
   top: 150%;
   right: 25%;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 40px; /* 圆角 */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* 阴影 */
+  border-radius: 40px;
+  /* 圆角 */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  /* 阴影 */
   transition: transform 0.2s ease-in-out;
 }
 
 .square5:hover {
-  background-color: #a7c288; /* 设置方块背景颜色 */
+  background-color: #a7c288;
+  /* 设置方块背景颜色 */
   transform: scale(1.05);
 }
 
@@ -212,8 +242,10 @@ header {
 }
 
 .square5 square5t1 a {
-  text-decoration: none; /* 去掉下划线 */
-  color: #ffffff; /* 设置链接颜色 */
+  text-decoration: none;
+  /* 去掉下划线 */
+  color: #ffffff;
+  /* 设置链接颜色 */
 }
 
 /* 设置底栏样式 */
@@ -224,8 +256,10 @@ header {
   position: absolute;
   bottom: -100%;
   display: flex;
-  justify-content: center; /* 水平方向上均匀分布 */
-  align-items: center; /* 竖直方向上居中对齐 */
+  justify-content: center;
+  /* 水平方向上均匀分布 */
+  align-items: center;
+  /* 竖直方向上居中对齐 */
 }
 
 /* 设置底栏文字 */
@@ -240,20 +274,26 @@ header {
 
 /* 设置链接文本的颜色 */
 .footer footert1 a {
-  text-decoration: none; /* 去掉下划线 */
-  color: #7d918d; /* 设置链接颜色 */
+  text-decoration: none;
+  /* 去掉下划线 */
+  color: #7d918d;
+  /* 设置链接颜色 */
 }
 
 /* 设置链接文本的悬停颜色 */
 .footer footert1 a:hover {
-  text-decoration: none; /* 鼠标悬停时添加下划线 */
-  color: #ffffff; /* 设置悬停颜色 */
+  text-decoration: none;
+  /* 鼠标悬停时添加下划线 */
+  color: #ffffff;
+  /* 设置悬停颜色 */
 }
 
 .page {
-  height: 100vh; /* 设置每个页面的高度为视口高度的一半 */
-  overflow: auto; /* 允许内容滚动 */
-  background: linear-gradient(to left, #2a3a21, #354249);
+  height: 100vh;
+  /* 设置每个页面的高度为视口高度的一半 */
+  overflow: auto;
+  /* 允许内容滚动 */
+  background: linear-gradient(to left, #8f7394, #34032f);
 }
 
 .selfIntroApply {
@@ -350,18 +390,23 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 40px; /* 圆角 */
+  border-radius: 40px;
+  /* 圆角 */
   margin-left: 5%;
   margin-top: 5%;
 }
 
 .button-container {
-  position: absolute; /* 设置绝对定位 */
-  top: 1%; /* 距离顶部的距离 */
-  right: 5%; /* 距离右侧的距离 */
+  position: absolute;
+  /* 设置绝对定位 */
+  top: 1%;
+  /* 距离顶部的距离 */
+  right: 5%;
+  /* 距离右侧的距离 */
   gap: 20px;
   display: flex;
-  flex-direction: row; /* 将按钮水平排列 */
+  flex-direction: row;
+  /* 将按钮水平排列 */
 }
 
 .button {
@@ -413,6 +458,7 @@ header {
   from {
     width: 0;
   }
+
   to {
     width: 88%;
   }
@@ -426,20 +472,25 @@ header {
 
 /* 例如，将以下代码添加到你的CSS文件中 */
 @media screen and (max-width: 1200px) {
+
   /* 在小屏幕上的样式调整 */
   .button-container {
-    top: 1%; /* 调整按钮距离顶部的距离 */
+    top: 1%;
+    /* 调整按钮距离顶部的距离 */
     right: 11%;
     display: flex;
-    justify-content: center; /* 水平方向上均匀分布 */
-    align-items: center; /* 竖直方向上居中对齐 */
+    justify-content: center;
+    /* 水平方向上均匀分布 */
+    align-items: center;
+    /* 竖直方向上居中对齐 */
     position: absolute;
   }
 
   .button {
     width: 60px;
     height: 40px;
-    margin-bottom: 10px; /* 调整按钮之间的间距 */
+    margin-bottom: 10px;
+    /* 调整按钮之间的间距 */
   }
 
   .button span {
@@ -459,10 +510,13 @@ header {
   }
 
   .square1 square1t1 img {
-    width: 40%; /* 设置图片容器的宽度 */
-    height: 40%; /* 设置图片容器的高度 */
+    width: 40%;
+    /* 设置图片容器的宽度 */
+    height: 40%;
+    /* 设置图片容器的高度 */
     padding: 10%;
-    box-shadow: 10px 0 20px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+    box-shadow: 10px 0 20px rgba(0, 0, 0, 0.1);
+    /* 添加阴影效果 */
     border-radius: 50%;
     margin-bottom: 10%;
     margin-left: 20%;
