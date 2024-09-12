@@ -3,7 +3,6 @@
   /* Set container height to 100% of viewport height */
   overflow: auto;
   position: relative;
-  background: linear-gradient(to left, #8f7394, #34032f);
 }
 
 html,
