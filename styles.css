@@ -124,7 +124,7 @@ header {
 .square3 {
   width: 40%;
   height: 30%;
-  background: linear-gradient(to bottom, #ef130c, #ebe408);
+  background: linear-gradient(315deg, #07f4c9, #04c0eb);
   position: absolute;
   top: 153%;
   left: 7%;
@@ -169,7 +169,7 @@ header {
 .square4 {
   width: 25%;
   height: 30%;
-  background: linear-gradient(to bottom, #2a06dc, #04ec6c);
+  background: linear-gradient(to left, #df06eb, #06deee);
   /* 设置方块背景颜色 */
   position: absolute;
   top: 115%;
