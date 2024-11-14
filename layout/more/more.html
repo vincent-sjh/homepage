@@ -154,6 +154,49 @@
         </td>
       </tr>
 
+      <tr>
+        <td class="section-image-large">
+          <div class="imageWithCaption">
+            <img src="../../image/lca.png" alt="LLM Life Cycle" width="330" height="200" />
+            <!-- <p class="bodytext">Huawei HCI Hackathon</p> -->
+          </div>
+        </td>
+
+        <td class="section-content">
+          <div class="section-title"> LLM (Large Language Model) LCA (Life Cycle Assessment) carbon footprint
+            measurement and carbon reduction strategies</div>
+          <div class="section-second-title">
+            Blog
+          </div>
+          <div class="section-details">
+            <span class="section-date">2023.9 ~ 2024.01</span>
+
+            <br />
+            I led a team to evaluate the LCA carbon footprint of large language models (LLMs) and proposed corresponding
+            carbon
+            reduction strategies. Our calculation formula takes into account both the operational and embodied
+            footprints, combining
+            the Scaling Law and the FLOP model, with estimations based on model performance across various validation
+            sets. The
+            formula we summarized is
+            <br />
+            \( CO_2^{eq}=CO_2eq_{oper}+CO_2eq_{emb} \approx \frac {n_{dev} \cdot t_{train} \cdot
+            CO2_{eq_{chip}}}{\text{lifetime}} +
+            \frac{FLOPS \cdot W_{peak} \cdot PUE \cdot carbon_{inten}}{FLOP_{peak}} \).
+            <br />
+            Our findings indicate that sparse Mixture of Experts (MoE) architectures—the core idea of MoE being to
+            decompose a large
+            model into multiple smaller models (experts), with a gating network deciding which experts to activate for
+            each input
+            sample—and the use of specialized ML hardware, such as energy-efficient TPUs instead of GPUs, can
+            significantly reduce
+            carbon emissions while maintaining performance metrics. These are worthwhile measures for carbon reduction.
+
+
+          </div>
+        </td>
+      </tr>
+
 
     </table>
     <div class="bigTitle">Pathfinder & Explorer</div>
