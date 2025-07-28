@@ -52,6 +52,11 @@
         <img src="image/vincent.jpg" alt="my personal picture" />
       </square1t1>
     </div>
+
+    <!-- 灯光网格 -->
+    <div class="light-grid-container">
+      <div class="light-grid" id="lightGrid"></div>
+    </div>
     <div class="textContainer">
       <div class="bodyBigtext">Jianhao Song</div>
       <div class="bodyChineseBigtext">宋建昊</div>
@@ -102,7 +107,7 @@
         <br />
         <a target="black">Programming Languages</a>: C / C++ / Python / Ocaml / Rust / Markdown / HTML / CSS / Matlab
         <br />
-        <a target="black">Frameworks</a>: Pytorch / vLLM / React / Django / Sanic  
+        <a target="black">Frameworks</a>: Pytorch / vLLM / React / Django / Sanic
         <br />
         <a target="black">Apps & Tools</a>: Shell / Vim / Git / LaTeX / Obsidian / Ghidra
         <br />
@@ -115,7 +120,10 @@
       <div class="bodyMidtext">More</div>
       <p class="bodytext">
         <br />
-        1. I am a member of <strong><a href="https://moshumanoid.github.io/">TH-MOS</a></strong>, a football team where all the players are robots. Our <a href="https://www.ais.uni-bonn.de/humanoidsoccer/qualification/TH-MOS-TeenSize_TDP.pdf">humanoid robot</a> achieved excellent results in the <a href="https://www.robocup.org/">RoboCup</a>.
+        1. I am a member of <strong><a href="https://moshumanoid.github.io/">TH-MOS</a></strong>, a football team where
+        all the players are robots. Our <a
+          href="https://www.ais.uni-bonn.de/humanoidsoccer/qualification/TH-MOS-TeenSize_TDP.pdf">humanoid robot</a>
+        achieved excellent results in the <a href="https://www.robocup.org/">RoboCup</a>.
         <br />
       </p>
 
@@ -161,8 +169,7 @@
       <footert1><a href="https://space.bilibili.com/677971916"><img src="image/youtube.png" alt="Youtube" width="25"
             height="25" />
           Bilibili</a></footert1>
-      <footert1><a href="https://x.com/si57311"><img src="image/twitter.png" alt="Twitter" width="25"
-            height="25" />
+      <footert1><a href="https://x.com/si57311"><img src="image/twitter.png" alt="Twitter" width="25" height="25" />
           X</a></footert1>
       <footert1><a href="https://vincent-sjh.github.io/"><img src="image/twitter.png" alt="Twitter" width="25"
             height="25" />
@@ -170,6 +177,144 @@
 
     </div>
   </div>
+
+  <script>
+    // 七彩颜色数组
+    const colors = [
+      '#ff0000', // 红
+      '#ff7f00', // 橙
+      '#ffff00', // 黄
+      '#00ff00', // 绿
+      '#0000ff', // 蓝
+      '#4b0082', // 靛
+      '#9400d3'  // 紫
+    ];
+
+    // 存储每个格子的定时器和状态
+    const timers = new Map();
+    const cellStates = new Map();
+
+    // 创建网格
+    function createLightGrid() {
+      const grid = document.getElementById('lightGrid');
+      if (!grid) return;
+
+      const totalCells = 14 * 12; // 168个格子
+
+      for (let i = 0; i < totalCells; i++) {
+        const cell = document.createElement('div');
+        cell.className = 'light-grid-cell';
+        cell.dataset.index = i;
+
+        // 鼠标进入事件
+        cell.addEventListener('mouseenter', handleMouseEnter);
+
+        grid.appendChild(cell);
+      }
+    }
+
+    // 将十六进制颜色转换为RGB
+    function hexToRgb(hex) {
+      const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+      return result ? {
+        r: parseInt(result[1], 16),
+        g: parseInt(result[2], 16),
+        b: parseInt(result[3], 16)
+      } : null;
+    }
+
+    // 更新格子的视觉效果
+    function updateCellAppearance(cell, color, brightness) {
+      const rgb = hexToRgb(color);
+      if (!rgb) return;
+
+      const alpha = brightness;
+      const shadowAlpha = brightness * 0.8;
+
+      // 设置颜色和透明度
+      cell.style.color = `rgba(${rgb.r}, ${rgb.g}, ${rgb.b}, ${alpha})`;
+      cell.style.backgroundColor = `rgba(${rgb.r}, ${rgb.g}, ${rgb.b}, ${alpha * 0.3})`;
+      cell.style.borderColor = `rgba(${rgb.r}, ${rgb.g}, ${rgb.b}, ${alpha * 0.6})`;
+
+      // 设置阴影效果
+      if (brightness > 0.1) {
+        cell.style.boxShadow = `
+          0 0 ${10 * brightness}px rgba(${rgb.r}, ${rgb.g}, ${rgb.b}, ${shadowAlpha}),
+          0 0 ${20 * brightness}px rgba(${rgb.r}, ${rgb.g}, ${rgb.b}, ${shadowAlpha * 0.7}),
+          0 0 ${30 * brightness}px rgba(${rgb.r}, ${rgb.g}, ${rgb.b}, ${shadowAlpha * 0.5})
+        `;
+        cell.style.transform = `scale(${1 + brightness * 0.05})`;
+      } else {
+        cell.style.boxShadow = '';
+        cell.style.transform = '';
+      }
+    }
+
+    // 逐渐熄灭动画
+    function fadeOut(cell, index, color, startTime) {
+      const currentTime = Date.now();
+      const elapsed = currentTime - startTime;
+      const duration = 500; // 0.5秒
+
+      // 计算当前亮度 (从1到0)
+      const progress = Math.min(elapsed / duration, 1);
+      const brightness = 1 - progress;
+
+      if (brightness > 0) {
+        updateCellAppearance(cell, color, brightness);
+
+        // 继续动画
+        const animationId = requestAnimationFrame(() => fadeOut(cell, index, color, startTime));
+        cellStates.set(index, { color, brightness, animationId, startTime });
+      } else {
+        // 完全熄灭
+        cell.style.color = '';
+        cell.style.backgroundColor = '';
+        cell.style.borderColor = '';
+        cell.style.boxShadow = '';
+        cell.style.transform = '';
+        cellStates.delete(index);
+        timers.delete(index);
+      }
+    }
+
+    // 处理鼠标进入事件
+    function handleMouseEnter(event) {
+      const cell = event.target;
+      const index = cell.dataset.index;
+
+      // 清除之前的定时器和动画
+      if (timers.has(index)) {
+        clearTimeout(timers.get(index));
+      }
+      if (cellStates.has(index)) {
+        const state = cellStates.get(index);
+        if (state.animationId) {
+          cancelAnimationFrame(state.animationId);
+        }
+      }
+
+      // 随机选择颜色
+      const randomColor = colors[Math.floor(Math.random() * colors.length)];
+
+      // 立即设置为最高亮度
+      updateCellAppearance(cell, randomColor, 1);
+
+      // 设置750ms后开始熄灭的定时器
+      const timer = setTimeout(() => {
+        const startTime = Date.now();
+        fadeOut(cell, index, randomColor, startTime);
+      }, 750);
+
+      timers.set(index, timer);
+      cellStates.set(index, { color: randomColor, brightness: 1, startTime: Date.now() });
+    }
+
+    // 页面加载完成后初始化网格
+    document.addEventListener('DOMContentLoaded', function () {
+      createLightGrid();
+    });
+  </script>
 </body>
 
 </html>

@@ -470,6 +470,43 @@ header {
   }
 }
 
+/* 灯光网格样式 */
+.light-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(14, 1fr);
+  gap: 0.5px;
+  width: 35%;
+  height: 580px;
+  margin-left: 7%;
+  margin-top: 3%;
+  float: left;
+  clear: left;
+  padding: 15px;
+  background: rgba(20, 20, 20, 0.3);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.light-grid-cell {
+  background: rgba(40, 40, 40, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  aspect-ratio: 1 / 1;
+  width: 80%;
+  height: 80%;
+}
+
+.light-grid-cell.glowing {
+  box-shadow: 0 0 10px currentColor, 0 0 20px currentColor, 0 0 30px currentColor;
+  border-color: currentColor;
+  transform: scale(1.05);
+}
+
+
+
 /* 例如，将以下代码添加到你的CSS文件中 */
 @media screen and (max-width: 1200px) {
 
@@ -590,4 +627,6 @@ header {
     padding: 1px;
     margin: 0 5%;
   }
+
+
 }
