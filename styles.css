@@ -508,6 +508,77 @@ header {
 
 
 /* 例如，将以下代码添加到你的CSS文件中 */
+/* 大标题样式 */
+.bigTitle {
+  font-size: 50px;
+  color: #ffffff;
+  text-align: center;
+  padding: 30px 10px;
+  margin: 40px 10%;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  display: block;
+}
+
+/* 内容表格样式 */
+.content-table {
+  width: 90%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  margin-bottom: 50px;
+}
+
+.section-image-large {
+  width: 35%;
+  padding: 20px;
+  vertical-align: top;
+}
+
+.section-content {
+  width: 65%;
+  padding: 20px;
+  vertical-align: top;
+}
+
+.section-title {
+  font-size: 28px;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.section-second-title {
+  font-size: 20px;
+  color: #91af91;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.section-details {
+  font-size: 16px;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
+}
+
+.section-date {
+  color: #91af91;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.imageWithCaption img {
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.imageWithCaption img:hover {
+  transform: scale(1.02);
+}
+
 /* 照片网格样式 */
 .photoGrid {
   display: flex;
@@ -524,7 +595,7 @@ header {
   align-items: center;
   gap: 30px;
   width: 100%;
-  max-width: 1400px;
+  max-width: 1200px;
 }
 
 .photoContainer {
@@ -542,8 +613,8 @@ header {
 }
 
 .photoContainer .imageWithCaption img {
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
   object-fit: cover;
   border-radius: 15px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
@@ -558,7 +629,7 @@ header {
 .photoContainer .bodytext {
   margin: 15px 0 0 0;
   padding: 0;
-  font-size: 18px;
+  font-size: 16px;
   color: #ffffff;
   text-align: center;
   font-family: "Montserrat", sans-serif;
@@ -698,13 +769,36 @@ header {
   }
 
   .photoContainer .imageWithCaption img {
-    width: 280px;
-    height: 280px;
+    width: 250px;
+    height: 250px;
   }
 
   .photoContainer .bodytext {
-    font-size: 14px;
+    font-size: 12px;
     margin: 10px 0 0 0;
+    padding: 0;
+  }
+
+  .bigTitle {
+    font-size: 25px;
+    padding: 15px 5px;
+    margin: 20px 5%;
+  }
+
+  .content-table {
+    width: 95%;
+  }
+
+  .section-title {
+    font-size: 20px;
+  }
+
+  .section-second-title {
+    font-size: 16px;
+  }
+
+  .section-details {
+    font-size: 14px;
   }
 
 }
