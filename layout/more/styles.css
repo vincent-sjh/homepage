@@ -1,3 +1,35 @@
+/* 横向排列三张照片的容器 */
+.photoRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 32px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.photoRow .photoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+.photoRow .imageWithCaption img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.photoRow .imageWithCaption p {
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+  margin-top: 8px;
+}
 .page {
   height: 100vh;
   /* Set container height to 100% of viewport height */
