@@ -191,7 +191,6 @@ body {
 }
 
 .photoContainer .imageWithCaption {
-  width: 30%;
   /* 和原来图片的宽度一样 */
   margin-bottom: 20px;
 }
