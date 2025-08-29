@@ -131,7 +131,9 @@ body {
 }
 
 .section-image-large img {
+  /* 圆角 */
   max-width: 600px;
+  border-radius: 10px;
 }
 
 .section-content {
