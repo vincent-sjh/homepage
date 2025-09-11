@@ -170,7 +170,7 @@ function createVisualization(json) {
         .attr("transform", "translate(145,-65) rotate(65)")
         .attr("text-anchor", "middle")
         .attr("fill","white")
-        .attr("font-family","Arial")
+        .attr("font-family","Space Grotesk")
         .attr("font-weight", "bold")
         .attr("font-size","20")
         .text("ARTS & HUM.");
@@ -179,7 +179,7 @@ function createVisualization(json) {
         .attr("transform", "translate(-55,-158) rotate(-18)")
         .attr("text-anchor", "middle")
         .attr("fill","white")
-        .attr("font-family","Arial")
+        .attr("font-family","Space Grotesk")
         .attr("font-weight", "bold")
         .attr("font-size","20")
         .text("SEAS");
@@ -188,7 +188,7 @@ function createVisualization(json) {
         .attr("transform", "translate(-160,-30) rotate(-80)")
         .attr("text-anchor", "middle")
         .attr("fill","white")
-        .attr("font-family","Arial")
+        .attr("font-family","Space Grotesk")
         .attr("font-weight", "bold")
         .attr("font-size","20")
         .text("SCIENCE");
@@ -197,7 +197,7 @@ function createVisualization(json) {
         .attr("transform", "translate(-10,178) rotate(3)")
         .attr("text-anchor", "middle")
         .attr("fill","white")
-        .attr("font-family","Arial")
+        .attr("font-family","Space Grotesk")
         .attr("font-weight", "bold")
         .attr("font-size","20")
         .text("SOCIAL SCI.");

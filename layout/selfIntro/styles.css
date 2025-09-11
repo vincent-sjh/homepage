@@ -4,7 +4,7 @@
     text-align: center;
     padding: 5px;
     margin: 0 10%;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     font: bold;
 }
 
@@ -14,7 +14,7 @@
     text-align: center;
     padding: 10px;
     margin: 0 20%;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     font: bold;
 }
 
@@ -32,7 +32,7 @@
 
 body {
     background: linear-gradient(to bottom, #426B69, #8BB174);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Space Grotesk", Arial, Helvetica, sans-serif;
 }
 
 html,
@@ -47,7 +47,7 @@ body {
     color: #353232;
     text-align: center;
     padding: 1px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     font: bold;
 }
 
@@ -65,7 +65,7 @@ body {
     color: #353232;
     text-align: center;
     padding: 5px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     font: bold;
 }
 
@@ -75,7 +75,7 @@ body {
     text-align: center;
     padding: 5px;
     margin: 0 10%;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     text-align: start;
 }
 

@@ -2,7 +2,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Space Grotesk", Arial, Helvetica, sans-serif;
 }
 
 /* 设置头部样式 */
@@ -45,7 +45,7 @@ header {
   text-align: center;
   margin: 10%;
   padding: 10px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font: bold;
   top: 100px;
 }
@@ -106,7 +106,7 @@ header {
   text-align: center;
   margin: 10%;
   padding: 5px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font: bold;
 }
 
@@ -150,7 +150,7 @@ header {
   text-align: center;
   margin: 10%;
   padding: 10px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font: bold;
 }
 
@@ -196,7 +196,7 @@ header {
   text-align: center;
   margin: 10%;
   padding: 10px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font: bold;
 }
 
@@ -237,7 +237,7 @@ header {
   text-align: center;
   margin: 10%;
   padding: 10px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font: bold;
 }
 
@@ -268,7 +268,7 @@ header {
   color: #b5b0b0;
   text-align: center;
   padding: 10px;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font: bold;
 }
 
@@ -302,7 +302,7 @@ header {
   text-align: center;
   padding: 10px;
   margin: 0 10%;
-  font-family: "Poppins", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font: bold;
 }
 
@@ -312,7 +312,7 @@ header {
   text-align: center;
   padding: 10px;
   margin: 0 10%;
-  font-family: "Poppins", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font: bold;
 }
 
@@ -327,7 +327,7 @@ header {
   text-align: center;
   padding: 10px;
   margin: 0 10%;
-  font-family: "Poppins", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font: bold;
   display: inline-block;
 }
@@ -349,7 +349,7 @@ header {
   text-align: center;
   padding: 10px;
   margin: 0 10%;
-  font-family: "Poppins", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font: bold;
   display: inline-block;
 }
@@ -360,7 +360,7 @@ header {
   text-align: center;
   padding: 10px;
   margin: 0 10%;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   text-align: start;
 }
 
@@ -442,7 +442,7 @@ header {
 
 .typed-out {
   overflow: hidden;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   color: #cc3f0c;
   padding: 10px;
   margin: 0 10%;
@@ -515,7 +515,7 @@ header {
   text-align: center;
   padding: 30px 10px;
   margin: 40px 10%;
-  font-family: "Poppins", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-weight: bold;
   display: block;
 }
@@ -543,7 +543,7 @@ header {
 .section-title {
   font-size: 28px;
   color: #ffffff;
-  font-family: "Poppins", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-weight: bold;
   margin-bottom: 10px;
 }
@@ -551,7 +551,7 @@ header {
 .section-second-title {
   font-size: 20px;
   color: #91af91;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-weight: 600;
   margin-bottom: 15px;
 }
@@ -559,7 +559,7 @@ header {
 .section-details {
   font-size: 16px;
   color: #ffffff;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   line-height: 1.6;
 }
 
@@ -632,7 +632,7 @@ header {
   font-size: 16px;
   color: #ffffff;
   text-align: center;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-weight: 600;
 }
 

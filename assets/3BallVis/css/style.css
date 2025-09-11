@@ -1,7 +1,7 @@
 /*General*/
 body {
     background-color: #f4f0e1 !important;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Space Grotesk", sans-serif;
 }
 
 h1 .divider {
@@ -15,18 +15,18 @@ h1 .sub-headline {
 }
 
 h3 {
-    font-family: "Open Sans";
+    font-family: "Space Grotesk";
     font-weight: 900;
     color: #504230;
 }
 
 h4 {
-    font-family: "Open Sans";
+    font-family: "Space Grotesk";
     font-weight: 400;
 }
 
 h5 {
-    font-family: "Open Sans";
+    font-family: "Space Grotesk";
     font-size: 10px;
 }
 
@@ -87,7 +87,7 @@ h5 {
 }
 
 #story_begin {
-    font-family: "Open Sans";
+    font-family: "Space Grotesk";
     font-size: 24px;
     line-height: 1.5;
     color: rgb(244, 238, 235);
@@ -132,7 +132,7 @@ fieldset, label {
     text-align:center;
     margin: auto;
     position: relative;
-    font-family: "Open Sans"
+    font-family: "Space Grotesk"
 }
 
 .rating {
@@ -167,7 +167,7 @@ fieldset, label {
 .rating > input:checked ~ label:hover ~ label { color: rgba(251, 12, 10, 0.28);  }
 
 #ranking-type {
-    font-family: "Open Sans";
+    font-family: "Space Grotesk";
 }
 
 .female{
@@ -213,22 +213,22 @@ fieldset, label {
 }
 
 #text1 {
-    font-family: "Open Sans";
+    font-family: "Space Grotesk";
     font-weight: 200;
 }
 
 #text2 {
-    font-family: "Open Sans";
+    font-family: "Space Grotesk";
     font-weight: 200;
 }
 
 #text3 {
-    font-family: "Open Sans";
+    font-family: "Space Grotesk";
     font-weight: 200;
 }
 
 #text4 {
-    font-family: "Open Sans";
+    font-family: "Space Grotesk";
     font-size: 18px;
     font-weight: bold;
     fill: #d57a47;
@@ -238,7 +238,7 @@ fieldset, label {
 /*Timeline CSS*/
 
 .form-group {
-    font-family: "Open Sans";
+    font-family: "Space Grotesk";
 }
 
 
@@ -286,12 +286,12 @@ fieldset, label {
     padding: 15px;
     border: 3px solid #d57a47;
     border-radius: 20px;
-    font-family: "Open Sans";
+    font-family: "Space Grotesk";
 }
 
 #description {
     font-size: 20px;
-    font-family: "Arial";
+    font-family: "Space Grotesk";
     /*font-weight: bolder;*/
 }
 
@@ -312,7 +312,7 @@ fieldset, label {
 }
 
 .carousel-inner {
-    font-family: "Open Sans";
+    font-family: "Space Grotesk";
     width: 100%;
     height: 160px !important;
     margin-bottom: 20px;
@@ -377,7 +377,7 @@ hr {
 }
 
 #reference_list {
-    font-family: "Open Sans";
+    font-family: "Space Grotesk";
     font-weight: 400;
     font-size: 10px;
     margin-left: 50px;

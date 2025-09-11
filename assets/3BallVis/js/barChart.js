@@ -47,7 +47,7 @@ function updateBarChart(school, vis) {
             .text(schoolData[0]["name"]).style("text-anchor", "middle")
             .attr("font-weight", "900")
             .attr("font-size", "20")
-            .attr("font-family", "Open Sans");
+            .attr("font-family", "Space Grotesk");
 
         svg.append("g")
             .append("text")
@@ -65,7 +65,7 @@ function updateBarChart(school, vis) {
             .attr("y", 210)
             .text("of faculty are female.")
             .attr("font-size", "18")
-            .attr("font-family", "Open Sans");
+            .attr("font-family", "Space Grotesk");
 
         var image_width = 125;
         svg.append("g")
@@ -112,7 +112,7 @@ function updateBarChart(school, vis) {
             .attr("font-weight", "bold")
             .attr("x", "20%")
             .attr("y", 330)
-            .attr("font-family", "Open Sans");
+            .attr("font-family", "Space Grotesk");
 
         svg.append("g")
             .append("text")
@@ -122,7 +122,7 @@ function updateBarChart(school, vis) {
             .attr("font-weight", "bold")
             .attr("x", "50%")
             .attr("y", 330)
-            .attr("font-family", "Open Sans");
+            .attr("font-family", "Space Grotesk");
 
         svg.append("g")
             .append("text")
@@ -132,7 +132,7 @@ function updateBarChart(school, vis) {
             .attr("font-weight", "bold")
             .attr("x", "80%")
             .attr("y", 330)
-            .attr("font-family", "Open Sans");
+            .attr("font-family", "Space Grotesk");
 
         svg.append("g")
             .append("text")
@@ -172,7 +172,7 @@ function updateBarChart(school, vis) {
             .attr("font-size", "18")
             .attr("x", width/2)
             .attr("y", 290)
-            .attr("font-family", "Open Sans");
+            .attr("font-family", "Space Grotesk");
 
         svg.append("g")
             .append("text")
@@ -181,7 +181,7 @@ function updateBarChart(school, vis) {
             .attr("font-size", "18")
             .attr("x", width/2)
             .attr("y", 440)
-            .attr("font-family", "Open Sans");
+            .attr("font-family", "Space Grotesk");
 
         svg.append('rect')
             .attr('class', 'bg-rect')
