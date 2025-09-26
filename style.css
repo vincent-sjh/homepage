@@ -1,0 +1,356 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', monospace;
+    height: 100vh;
+    overflow: hidden;
+    background: #000;
+    position: relative;
+}
+
+/* Futuristic Background */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #0c0c0c 0%, #1a1a2e 50%, #16213e 100%);
+    z-index: 1;
+}
+
+/* Animated Stars */
+.stars {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(2px 2px at 20px 30px, #eee, transparent),
+        radial-gradient(2px 2px at 40px 70px, rgba(255,255,255,0.8), transparent),
+        radial-gradient(1px 1px at 90px 40px, #fff, transparent),
+        radial-gradient(1px 1px at 130px 80px, rgba(255,255,255,0.6), transparent),
+        radial-gradient(2px 2px at 160px 30px, #fff, transparent);
+    background-repeat: repeat;
+    background-size: 200px 100px;
+    animation: twinkle 4s infinite;
+}
+
+/* Grid Overlay */
+.grid-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        linear-gradient(rgba(0, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+    animation: grid-pulse 3s ease-in-out infinite alternate;
+}
+
+
+
+
+
+/* Content Styling */
+.content {
+    position: relative;
+    z-index: 2;
+    padding: 40px;
+    color: #fff;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.title {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #00ffff;
+    text-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+    letter-spacing: 0.3em;
+    animation: title-glow 2s ease-in-out infinite alternate;
+}
+
+.tech-text {
+    margin-bottom: 3rem;
+    line-height: 1.8;
+}
+
+.tech-text p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.8);
+    border-left: 3px solid #00ffff;
+    padding-left: 1rem;
+    animation: text-fade-in 1s ease-out;
+}
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.grid-item {
+    background: rgba(0, 255, 255, 0.1);
+    border: 1px solid rgba(0, 255, 255, 0.3);
+    padding: 1rem;
+    border-radius: 8px;
+    font-family: 'Courier New', monospace;
+    color: #00ffff;
+    transition: all 0.3s ease;
+}
+
+.grid-item:hover {
+    background: rgba(0, 255, 255, 0.2);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+}
+
+/* Animations */
+@keyframes twinkle {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+}
+
+@keyframes grid-pulse {
+    0% { opacity: 0.3; }
+    100% { opacity: 0.1; }
+}
+
+
+
+
+
+@keyframes title-glow {
+    0% { text-shadow: 0 0 20px rgba(0, 255, 255, 0.5); }
+    100% { text-shadow: 0 0 30px rgba(0, 255, 255, 0.8), 0 0 40px rgba(0, 255, 255, 0.3); }
+}
+
+@keyframes text-fade-in {
+    from { opacity: 0; transform: translateX(-20px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+/* Liquid Glass Bar */
+.glass-bar {
+    position: fixed;
+    top: 50%;
+    left: 100px;
+    width: 500px;
+    height: 200px;
+    transform: translateY(-50%);
+    z-index: 10;
+    cursor: grab;
+    user-select: none;
+    transition: transform 0.1s ease-out;
+}
+
+.glass-bar:active {
+    cursor: grabbing;
+}
+
+.glass-surface {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2),
+        inset 0 -1px 0 rgba(255, 255, 255, 0.05);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.glass-surface::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.3),
+        transparent
+    );
+    animation: glass-shine 3s ease-in-out infinite;
+}
+
+.glass-surface::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.3) 0%, transparent 50%),
+        radial-gradient(circle at 70% 80%, rgba(0, 255, 255, 0.2) 0%, transparent 50%);
+    border-radius: 20px;
+}
+
+.glass-handle {
+    position: absolute;
+    top: 50%;
+    right: -30px;
+    width: 60px;
+    height: 60px;
+    transform: translateY(-50%);
+    background: rgba(0, 255, 255, 0.2);
+    border: 2px solid rgba(0, 255, 255, 0.5);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.glass-handle:hover {
+    background: rgba(0, 255, 255, 0.3);
+    border-color: rgba(0, 255, 255, 0.8);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.4);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.handle-text {
+    font-size: 10px;
+    color: #00ffff;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 0 0 5px rgba(0, 255, 255, 0.8);
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
+
+/* Vincent Introduction Styling */
+.vincent-intro {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.9);
+    font-family: 'Courier New', monospace;
+    z-index: 1;
+    position: relative;
+}
+
+.vincent-intro h2 {
+    font-size: 2rem;
+    color: #00ffff;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.6);
+    letter-spacing: 0.1em;
+}
+
+.vincent-intro p {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.4;
+}
+
+.vincent-intro .skills {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+.vincent-intro .skills span {
+    background: rgba(0, 255, 255, 0.2);
+    border: 1px solid rgba(0, 255, 255, 0.4);
+    padding: 0.3rem 0.6rem;
+    border-radius: 15px;
+    font-size: 0.7rem;
+    color: #00ffff;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.vincent-intro .skills span:hover {
+    background: rgba(0, 255, 255, 0.3);
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.4);
+}
+
+/* Glass Bar Hover Effects */
+.glass-bar:hover .glass-surface {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.25);
+    box-shadow: 
+        0 12px 40px rgba(0, 0, 0, 0.4),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3),
+        inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+        0 0 30px rgba(0, 255, 255, 0.2);
+}
+
+/* Liquid Animation */
+@keyframes glass-shine {
+    0% { left: -100%; }
+    50% { left: 100%; }
+    100% { left: 100%; }
+}
+
+@keyframes liquid-flow {
+    0%, 100% { transform: translateX(0) scaleX(1); }
+    50% { transform: translateX(2px) scaleX(1.02); }
+}
+
+.glass-bar.dragging .glass-surface {
+    animation: liquid-flow 0.5s ease-in-out infinite;
+    background: rgba(0, 255, 255, 0.08);
+    border-color: rgba(0, 255, 255, 0.3);
+    box-shadow: 
+        0 15px 50px rgba(0, 255, 255, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.4),
+        inset 0 -1px 0 rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .glass-bar {
+        width: 350px;
+        height: 180px;
+        left: 20px;
+    }
+    
+    .vincent-intro h2 {
+        font-size: 1.5rem;
+    }
+    
+    .vincent-intro p {
+        font-size: 0.8rem;
+    }
+    
+    .vincent-intro .skills span {
+        font-size: 0.6rem;
+        padding: 0.2rem 0.4rem;
+    }
+    
+    .title {
+        font-size: 2.5rem;
+    }
+    
+    .content {
+        padding: 20px;
+    }
+    
+    .tech-grid {
+        grid-template-columns: 1fr;
+    }
+}
