@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="test.css" />
 </head>
 
 <body>
@@ -72,7 +73,11 @@
     <div class="textContainer">
       <div class="bodyBigtext">Jianhao Song</div>
       <div class="bodyChineseBigtext">宋建昊</div>
-      <div class="bodyMidtext">We'll paint the world with our colors and everyone will know.</div>
+  <div class="bodyMidtext">
+    <div class="typed-container">
+      <span id="index-typed" class="typed"></span>
+    </div>
+  </div>
       <p class="bodytext">
         Hi👋! Great to see you here!
         <br />
@@ -159,19 +164,6 @@
       </div> -->
   </div>
   <div class="page" id="page2">
-    <div class="square2">
-      <square2t1><a href="https://vincent-sjh.github.io/">Blogs</a></square2t1>
-    </div>
-    <div class="square3">
-      <square3t1><a href="assets/CV.pdf">CV</a></square3t1>
-    </div>
-    <div class="square4">
-      <square4t1><a href="layout/research/research.html">Research</a></square4t1>
-    </div>
-    <div class="square5">
-      <square5t1><a href="layout/more/more.html">One more thing...</a></square5t1>
-    </div>
-
     <div class="footer">
       <footert1><a href="https://space.bilibili.com/677971916"><img src="image/bilibili.png" alt="Bilibili" width="25"
             height="25" />
@@ -193,5 +185,25 @@
 
 </body>
 <script src="script.js"></script>
+
+<script>
+  (function(){
+    const phrases = [
+      "别感冒，别多想。",
+      "We'll paint the world with our colors and everyone will know.",
+      "SJH ❤ ZYT."
+    ];
+    const TYPING_SPEED = 150; // ms per char
+    const BACKSPACE_SPEED = 40;
+    const PAUSE_AFTER_FULL = 2000;
+    const el = document.getElementById('index-typed');
+    function wait(ms){return new Promise(r=>setTimeout(r,ms));}
+    async function typeText(text){
+      for(let i=0;i<text.length;i++){ el.textContent += text[i]; await wait(TYPING_SPEED);} }
+    async function backspaceText(n){ for(let i=0;i<n;i++){ el.textContent = el.textContent.slice(0,-1); await wait(BACKSPACE_SPEED);} }
+    async function loop(){ let i=0; while(true){ const p=phrases[i]; await typeText(p); await wait(PAUSE_AFTER_FULL); await backspaceText(p.length); await wait(400); i=(i+1)%phrases.length; }}
+    document.addEventListener('DOMContentLoaded', ()=> setTimeout(loop,300));
+  })();
+</script>
 
 </html>

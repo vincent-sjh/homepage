@@ -1,0 +1,67 @@
+/* Styles for typing demo */
+:root{
+  --bg: #0f172a;
+  --panel: rgba(255,255,255,0.02);
+  --text: #e6eef8;
+  --accent: #7dd3fc;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:var(--bg);
+  font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  color:var(--text);
+}
+.type-wrap{
+  max-width:920px;
+  width:90%;
+  background:var(--panel);
+  padding:28px 36px;
+  border-radius:12px;
+  box-shadow: 0 12px 40px rgba(2,6,23,0.6);
+  text-align:center;
+}
+.typed-container{
+  /* reserve space for up to two lines of text to avoid pushing content below */
+  display:block;
+  height: calc(2 * 1.3em); /* 2 lines * line-height */
+  overflow: hidden;
+}
+.typed{
+  display:inline; /* inline so caret follows text */
+  font-size:30px;
+  line-height:1.3;
+  white-space:pre-wrap;
+  min-height:1.2em;
+  color:var(--text);
+}
+
+/* caret implemented on the typed element using ::after */
+.typed::after{
+  content: '';
+  display: inline-block;
+  margin-left: 6px;
+  width: 2px; /* narrow caret */
+  height: 1em; /* match one line height */
+  background: #ffffff; /* white caret */
+  border-radius:1px;
+  vertical-align: text-bottom; /* align with last line of text */
+  /* instant color toggle between white and transparent */
+  animation: blink-caret 1.2s steps(1, end) infinite;
+}
+
+@keyframes blink-caret{
+  0%   { background: #ffffff; }
+  50%  { background: transparent; }
+  100% { background: #ffffff; }
+}
+
+/* small responsive tweak */
+@media (max-width:600px){
+  .typed{font-size:20px}
+  .type-wrap{padding:18px}
+}

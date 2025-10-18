@@ -288,6 +288,20 @@ header {
   /* 设置悬停颜色 */
 }
 
+/* === Layout override: force a single scrollbar on the root (body) === */
+/* Some layout files set .page { overflow: auto } which creates nested scrollbars.
+   We prefer a single scrollbar on the document body. These rules use !important
+   to ensure they win over local styles in layout/* CSS files. */
+html, body {
+  height: auto !important;
+  overflow: auto !important;
+}
+.page {
+  height: auto !important;
+  min-height: 100vh !important; /* keep full-screen sections */
+  overflow: visible !important;  /* don't create inner scrollbars */
+}
+
 .page {
   height: 100vh;
   /* 设置每个页面的高度为视口高度的一半 */
