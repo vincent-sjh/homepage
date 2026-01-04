@@ -16,8 +16,8 @@ header {
 
 /* 设置左上方块的样式 */
 .square1 {
-  width: 40%;
-  height: 80%;
+  width: 30%;
+  height: 40%;
   background-color: rgb(72, 6, 105);
   /* 设置方块背景颜色 */
   display: flex;
