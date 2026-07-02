@@ -6,8 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vincent More</title>
   <link rel="icon" type="image/png" href="../../image/favicon.png" />
-  <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="../../common.css" />
+  <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700&display=swap" rel="stylesheet" />
@@ -16,29 +17,26 @@
 </head>
 
 <body>
-  <div class="page">
+  <nav class="site-nav">
     <div class="button-container">
       <a href="../../layout/research/research.html">
-        <div class="button">
-          <span>Research</span>
-        </div>
+        <div class="button"><span>Research</span></div>
       </a>
       <a href="../../index.html">
-        <div class="button">
-          <span>🏠Home</span>
-        </div>
+        <div class="button"><span>🏠 Home</span></div>
       </a>
       <a href="../../assets/CV.pdf">
-        <div class="button">
-          <span>CV</span>
-        </div>
+        <div class="button"><span>CV</span></div>
       </a>
       <a href="../more/more.html">
-        <div class="button">
-          <span>One more thing...</span>
-        </div>
+        <div class="button"><span>One more thing...</span></div>
       </a>
     </div>
+  </nav>
+
+  <div class="page">
+    <h1 class="page-title">Projects</h1>
+    <div class="content-card project-list">
     <table class="content-table">
             <tr>
         <td class="section-image-large">
@@ -83,7 +81,7 @@
             <br />
             Face Sculpting Master is a face-sculpting Agent developed by our team using the Trae IDE. It can generate 3D virtual avatars based on user-provided descriptions. The Agent creates corresponding Blender code to model a 3D entity and supports adjustments to environmental visual effects, such as lighting. The Face Sculpting Master project won the Outstanding Project Award at the ByteDance Trae SOLO Hackathon 2025 and was officially reposted by Trae.
           </div>
-        </td>s
+        </td>
       </tr>
       
       <tr>
@@ -218,17 +216,19 @@
 
 
     </table>
-    <p class="selfIntroLinks">
-      <a href="https://vincent-sjh.github.io/">Blogs</a>&nbsp/&nbsp
-      <a href="https://x.com/si57311">X</a>&nbsp/&nbsp
-      <a href="https://github.com/vincent-sjh">Github</a>&nbsp/&nbsp
-      <a href="https://huggingface.co/Vincentyyy">Huggingface</a>&nbsp/&nbsp
-      <a href="https://www.youtube.com/@Vincentyyy_AI_Lab">YouTube</a>&nbsp/&nbsp
-      <a href="https://www.douyin.com/user/MS4wLjABAAAAsZm0FWHsuGoWPQdqmWfrBVfKztMxsH9bJJvjDs2BDYE">抖音</a>&nbsp/&nbsp
-      <a href="https://space.bilibili.com/3690994966989729">Bilibili</a>&nbsp/&nbsp
-      <a href="https://xiaohongshu.com/user/profile/6374d185000000001f014a93">小红书</a>&nbsp/&nbsp
-      <a href="https://www.zhihu.com/people/song-jian-hao-72">知乎</a>&nbsp/&nbsp
-    </p>
+    </div>
+
+    <nav class="social-links" aria-label="Social links">
+      <a href="https://vincent-sjh.github.io/">Blogs</a>
+      <a href="https://x.com/si57311">X</a>
+      <a href="https://github.com/vincent-sjh">Github</a>
+      <a href="https://huggingface.co/Vincentyyy">Huggingface</a>
+      <a href="https://www.youtube.com/@Vincentyyy_AI_Lab">YouTube</a>
+      <a href="https://www.douyin.com/user/MS4wLjABAAAAsZm0FWHsuGoWPQdqmWfrBVfKztMxsH9bJJvjDs2BDYE">抖音</a>
+      <a href="https://space.bilibili.com/3690994966989729">Bilibili</a>
+      <a href="https://xiaohongshu.com/user/profile/6374d185000000001f014a93">小红书</a>
+      <a href="https://www.zhihu.com/people/song-jian-hao-72">知乎</a>
+    </nav>
   </div> 
 </body>
 
