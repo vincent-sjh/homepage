@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vincent Homepage</title>
+  <meta name="description" content="Jianhao Song (Vincent) — CS undergraduate at Tsinghua University. Research interests in causal learning and OOD generalization." />
+  <title>Jianhao Song — Vincent Homepage</title>
   <link rel="icon" type="image/png" href="image/favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -85,15 +86,15 @@
     </div>
 
     <nav class="social-links" aria-label="Social links">
-      <a href="https://vincent-sjh.github.io/">Blogs</a>
-      <a href="https://x.com/si57311">X</a>
-      <a href="https://github.com/vincent-sjh">Github</a>
-      <a href="https://huggingface.co/Vincentyyy">Huggingface</a>
-      <a href="https://www.youtube.com/@Vincentyyy_AI_Lab">YouTube</a>
-      <a href="https://www.douyin.com/user/MS4wLjABAAAAsZm0FWHsuGoWPQdqmWfrBVfKztMxsH9bJJvjDs2BDYE">抖音</a>
-      <a href="https://space.bilibili.com/3690994966989729">Bilibili</a>
-      <a href="https://xiaohongshu.com/user/profile/6374d185000000001f014a93">小红书</a>
-      <a href="https://www.zhihu.com/people/song-jian-hao-72">知乎</a>
+      <a href="https://vincent-sjh.github.io/" target="_blank" rel="noopener noreferrer">Blogs</a>
+      <a href="https://x.com/si57311" target="_blank" rel="noopener noreferrer">X</a>
+      <a href="https://github.com/vincent-sjh" target="_blank" rel="noopener noreferrer">Github</a>
+      <a href="https://huggingface.co/Vincentyyy" target="_blank" rel="noopener noreferrer">Huggingface</a>
+      <a href="https://www.youtube.com/@Vincentyyy_AI_Lab" target="_blank" rel="noopener noreferrer">YouTube</a>
+      <a href="https://www.douyin.com/user/MS4wLjABAAAAsZm0FWHsuGoWPQdqmWfrBVfKztMxsH9bJJvjDs2BDYE" target="_blank" rel="noopener noreferrer">抖音</a>
+      <a href="https://space.bilibili.com/3690994966989729" target="_blank" rel="noopener noreferrer">Bilibili</a>
+      <a href="https://xiaohongshu.com/user/profile/6374d185000000001f014a93" target="_blank" rel="noopener noreferrer">小红书</a>
+      <a href="https://www.zhihu.com/people/song-jian-hao-72" target="_blank" rel="noopener noreferrer">知乎</a>
     </nav>
   </div>
 
@@ -136,7 +137,13 @@
           i = (i + 1) % phrases.length;
         }
       }
-      document.addEventListener('DOMContentLoaded', () => setTimeout(loop, 300));
+      document.addEventListener('DOMContentLoaded', () => {
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+          el.textContent = phrases[0];
+          return;
+        }
+        setTimeout(loop, 300);
+      });
     })();
   </script>
 </body>
