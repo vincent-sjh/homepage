@@ -8,218 +8,112 @@
   <title>Projects — Vincent Homepage</title>
   <link rel="icon" type="image/png" href="../../image/favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&family=Noto+Sans+SC:wght@400;500;600&family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../../common.css" />
   <link rel="stylesheet" href="styles.css" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700&display=swap" rel="stylesheet" />
-
-
 </head>
 
 <body>
   <nav class="site-nav">
-    <div class="button-container">
-      <a href="../../index.html">
-        <div class="button"><span>🏠 Home</span></div>
-      </a>
-      <a href="../research/research.html">
-        <div class="button"><span>Research</span></div>
-      </a>
-      <a href="program.html" aria-current="page">
-        <div class="button"><span>Program</span></div>
-      </a>
-      <a href="../../assets/CV.pdf">
-        <div class="button"><span>CV</span></div>
-      </a>
-      <a href="../more/more.html">
-        <div class="button"><span>One more thing...</span></div>
-      </a>
+    <div class="nav-inner">
+      <a class="nav-brand" href="../../index.html">Jianhao Song</a>
+      <ul class="nav-links">
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../research/research.html">Research</a></li>
+        <li><a href="program.html" aria-current="page">Program</a></li>
+        <li><a href="../../assets/CV.pdf">CV</a></li>
+        <li><a href="../more/more.html">One more thing...</a></li>
+      </ul>
     </div>
   </nav>
 
   <div class="page">
-    <h1 class="page-title">Projects</h1>
-    <div class="content-card project-list">
-    <table class="content-table">
-            <tr>
-        <td class="section-image-large">
-          <div class="imageWithCaption">
-            <img src="../../image/undefined.jpg" alt="Undefined-OS" width="330" height="300" />
-            <!-- <p class="bodytext">Huawei HCI Hackathon</p> -->
-          </div>
-        </td>
+    <header class="page-header">
+      <h1 class="page-title">Projects</h1>
+    </header>
 
-        <td class="section-content">
-          <div class="section-title"><a href="https://undefined-os.github.io/doc/" target="_blank" rel="noopener noreferrer">Undefined-OS</a> </div>
-          <div class="section-second-title">
-            First Prize Entry of <a href="https://os.educg.net/#/index?TYPE=2025OS_K" target="_blank" rel="noopener noreferrer">OS Kernel Implementation Track, CSCC 2025</a> - National Finals
-          </div>
-          <div class="section-details">
-            <span class="section-date">2025.3 ~ 2025.8</span>
-            <br />
-            <a href="../../assets/CSCC_Report.pdf">Project Report</a>
-            <br />
-            Undefined-OS is a Linux-like, componentized kernel written in Rust based on the Arceos component library. Undefined-OS supports thread safety across multiple CPU cores and can run on various instruction architectures, including x86_64, riscv64, aarch64, and loongarch64, while also supporting execution on QEMU virtual machines and other hardware development boards. We provide a Linux-compatible system call implementation and a system call interface designed for future compatibility with other OSes. Our OS already supports running various applications and programming languages, such as Git, GCC, Vim, Sqlite3, Lua, Rust, and Python. You can use Vim for development, compile with rustc/gcc, and manage versions with Git, completing the full OS development workflow on our OS. In short, you can develop an OS on our OS.
-          </div>
-        </td>
+    <div class="project-list">
+      <article class="project">
+        <div class="project-media">
+          <img src="../../image/undefined.jpg" alt="Undefined-OS" loading="lazy" />
+        </div>
+        <div class="project-body">
+          <h2 class="project-title"><a href="https://undefined-os.github.io/doc/" target="_blank" rel="noopener noreferrer">Undefined-OS</a></h2>
+          <p class="project-kicker">First Prize Entry of <a href="https://os.educg.net/#/index?TYPE=2025OS_K" target="_blank" rel="noopener noreferrer">OS Kernel Implementation Track, CSCC 2025</a> — National Finals</p>
+          <p class="project-date">2025.3 – 2025.8 · <a href="../../assets/CSCC_Report.pdf">Project Report</a></p>
+          <p class="project-desc">Undefined-OS is a Linux-like, componentized kernel written in Rust based on the Arceos component library. It supports thread safety across multiple CPU cores and can run on x86_64, riscv64, aarch64, and loongarch64, as well as QEMU and hardware boards. We provide a Linux-compatible system call implementation. The OS already runs Git, GCC, Vim, Sqlite3, Lua, Rust, and Python — you can develop an OS on our OS.</p>
+        </div>
+      </article>
 
-      </tr>
+      <article class="project">
+        <div class="project-media">
+          <img src="../../image/TREA_SOLO_Hackathon.png" alt="TREA SOLO Hackathon 2025" loading="lazy" />
+        </div>
+        <div class="project-body">
+          <h2 class="project-title">Face Sculpting Master</h2>
+          <p class="project-kicker">Outstanding Work Award, ByteDance Trae SOLO Hackathon 2025 · <a href="https://www.douyin.com/video/7541297073723821362" target="_blank" rel="noopener noreferrer">Trae's official repost</a></p>
+          <p class="project-date">2025.8</p>
+          <p class="project-desc">A face-sculpting Agent built with Trae IDE. It generates 3D virtual avatars from user descriptions, produces corresponding Blender code, and supports lighting and environmental visual adjustments.</p>
+        </div>
+      </article>
 
-      <tr>
-        <td class="section-image-large">
-          <div class="imageWithCaption">
-            <img src="../../image/TREA_SOLO_Hackathon.png" alt="TREA SOLO Hackathon 2025" width="330" height="300" loading="lazy" />
-            <!-- <p class="bodytext">Huawei HCI Hackathon</p> -->
-          </div>
-        </td>
+      <article class="project">
+        <div class="project-media">
+          <img src="../../image/gravity_connect_four.png" alt="Gravity Connect Four" loading="lazy" />
+        </div>
+        <div class="project-body">
+          <h2 class="project-title">Gravity Connect Four</h2>
+          <p class="project-kicker">Reinforcement Learning</p>
+          <p class="project-date">2023.05 – 2023.07</p>
+          <p class="project-desc">Implemented UCT (UCB + Monte Carlo Tree Search) for Gravity Connect Four. The AI reached a 99.9% win rate against human opponents, and 97 wins in 100 games against other chess algorithms.</p>
+        </div>
+      </article>
 
-        <td class="section-content">
-          <div class="section-title"> Face Sculpting Master</div>
-          <div class="section-second-title">
-            Outstanding Work Award Entry of ByteDance Trae SOLO Hackathon 2025, obtaining <a href="https://www.douyin.com/video/7541297073723821362" target="_blank" rel="noopener noreferrer">Trae's official repost</a>
-          </div>
-          <div class="section-details">
-            <span class="section-date">2025.8</span>
+      <article class="project">
+        <div class="project-media">
+          <img src="../../image/New_York_University-Logo.png" alt="NYU Teaching Assistant" loading="lazy" />
+        </div>
+        <div class="project-body">
+          <h2 class="project-title">NYU Teaching Assistant</h2>
+          <p class="project-date">2024.10 – 2025.01</p>
+          <p class="project-desc">Teaching assistant in the <a href="https://shanghai.nyu.edu/academics/majors/computer-systems-engineering" target="_blank" rel="noopener noreferrer">CS Dept of NYU Shanghai</a> for one semester — practicing English communication in CST and experiencing an English-language university classroom.</p>
+        </div>
+      </article>
 
-            <br />
-            Face Sculpting Master is a face-sculpting Agent developed by our team using the Trae IDE. It can generate 3D virtual avatars based on user-provided descriptions. The Agent creates corresponding Blender code to model a 3D entity and supports adjustments to environmental visual effects, such as lighting. The Face Sculpting Master project won the Outstanding Project Award at the ByteDance Trae SOLO Hackathon 2025 and was officially reposted by Trae.
-          </div>
-        </td>
-      </tr>
-      
-      <tr>
-        <td class="section-image-large">
-          <div class="imageWithCaption">
-            <img src="../../image/gravity_connect_four.png" alt="Gravity Connect Four" width="330" height="290" loading="lazy" />
-            <!-- <p class="bodytext">Huawei HCI Hackathon</p> -->
-          </div>
-        </td>
+      <article class="project">
+        <div class="project-media">
+          <img src="../../image/Human_resource_machine.jpg" alt="Human Resource Machine" loading="lazy" />
+        </div>
+        <div class="project-body">
+          <h2 class="project-title">Human Resource Machine</h2>
+          <p class="project-date">2022.11 – 2023.1</p>
+          <p class="project-desc">Led a team to reimplement Tomorrow Corporation’s programming puzzle game <a href="https://tomorrowcorporation.com/humanresourcemachine" target="_blank" rel="noopener noreferrer">Human Resource Machine</a> in C++. Players write simple code to control a robot, training programming thinking without a specific language. The game also emphasizes code optimization.</p>
+        </div>
+      </article>
 
-        <td class="section-content">
-          <div class="section-title">Gravity Connect Four</div>
-          <div class="section-second-title">
-            Reinforcement Learning
-          </div>
-          <div class="section-details">
-            <span class="section-date">2023.05 ~ 2023.07</span>
-            <br />
-            I utilized the Upper Confidence Bound (UCB) algorithm with Monte Carlo Tree Search (MCTS) to implement the Upper Confidence Trees (UCT) algorithm for simulating Gravity Connect Four. This combination allowed the AI to make informed decisions, balancing exploration and exploitation. Numerous simulations helped the AI improve its strategy over time. Testing showed remarkable results, with the AI achieving a 99.9% win rate against human opponents, demonstrating the UCT algorithm's robustness. In 100 test games against various chess algorithms, the AI secured 97 victories, showcasing its adaptability across different strategies. The AI's ability to refine its decision-making through iterative simulations proved crucial in mastering complex game scenarios. 
-          </div>
-        </td>
-      </tr>
+      <article class="project">
+        <div class="project-media">
+          <img src="../../image/cpu_arch.png" alt="RISC-V pipelined CPU" loading="lazy" />
+        </div>
+        <div class="project-body">
+          <h2 class="project-title">RISC-V Pipelined CPU</h2>
+          <p class="project-date">2024.11 – 2024.12</p>
+          <p class="project-desc">Designed a five-stage RISC-V pipelined CPU in SystemVerilog on Vivado, with interrupts and exception handling, MMU virtual address translation, instruction and data caches, and a VGA controller for image display.</p>
+        </div>
+      </article>
 
-      <tr>
-        <td class="section-image-large">
-          <div class="imageWithCaption">
-            <img src="../../image/New_York_University-Logo.png" alt="NYU Teaching Assistant" width="330" height="220" loading="lazy" />
-            <!-- <p class="bodytext">Huawei HCI Hackathon</p> -->
-          </div>
-        </td>
-
-        <td class="section-content">
-          <div class="section-title">NYU Teaching Assistant</div>
-          <div class="section-details">
-            <span class="section-date">2024.10 ~ 2025.01</span>
-
-            <br />
-            I hope to practice my ability to use English to communicate in the field of CST, feel the teaching
-            atmosphere of an English university, and try more diversified cultural collisions. Therefore, I 
-            applied to be a teaching assistant in the
-            <strong><a href="https://shanghai.nyu.edu/academics/majors/computer-systems-engineering" target="_blank" rel="noopener noreferrer">
-                CS Dept of NYU Shanghai
-              </a></strong> for one semester, which was a fulfilling experience.
-          </div>
-        </td>
-      </tr>
-
-
-      <tr>
-        <td class="section-image-large">
-          <div class="imageWithCaption">
-            <img src="../../image/Human_resource_machine.jpg" alt="Human Resource Machine" width="330" height="200" loading="lazy" />
-            <!-- <p class="bodytext">Huawei HCI Hackathon</p> -->
-          </div>
-        </td>
-
-        <td class="section-content">
-          <div class="section-title">Human Resource Machine</div>
-          <div class="section-details">
-            <span class="section-date">2022.11 ~ 2023.1</span>
-
-            <br />
-            I led the team to use C++ to reimplement the programming puzzle game
-            <strong><a href="https://tomorrowcorporation.com/humanresourcemachine" target="_blank" rel="noopener noreferrer">Human Resource Machine </a></strong>
-            developed by Tomorrow Corporation. In this game, players need to input code to control a robot to complete
-            specified tasks, which effectively trains programming thinking without requiring knowledge of any specific
-            programming
-            language,as the game uses its own easy-to-understand code format. Additionally, our game emphasizes code
-            optimization,
-            encouraging players to use the simplest and most efficient code to achieve functionality.
-          </div>
-        </td>
-
-      </tr>
-
-      <tr>
-        <td class="section-image-large">
-          <div class="imageWithCaption">
-            <img src="../../image/cpu_arch.png" alt="CPU" width="330" height="260" loading="lazy" />
-            <!-- <p class="bodytext">Huawei HCI Hackathon</p> -->
-          </div>
-        </td>
-
-        <td class="section-content">
-          <div class="section-title"> RISC-V Pipelined CPU with the SystemVerilog language</div>
-          <div class="section-details">
-            <span class="section-date">2024.11 ~ 2024.12</span>
-
-            <br />
-            I led a team in designing and implementing a RISC-V pipelined CPU using SystemVerilog on the Vivado
-            platform. The CPU features a five-stage pipeline for efficient instruction execution. Our design includes 
-            robust support for interrupts and exception handling, enabling effective management of unexpected events
-            and errors. It also supports virtual address translation with an integrated Memory Management Unit (MMU), 
-            allowing for advanced memory management. We implemented a cache system, consisting of both Instruction 
-            Cache and Data Cache, to improve memory access speed and performance. Additionally, the design includes 
-            a VGA controller for image display, supporting multimedia output in real-time applications. 
-
-
-          </div>
-        </td>
-      </tr>
-
-      <tr>
-        <td class="section-image-large">
-          <div class="imageWithCaption">
-            <img src="../../image/MiniGLM.jpg" alt="MiniGLM" width="330" height="240" loading="lazy" />
-            <!-- <p class="bodytext">Huawei HCI Hackathon</p> -->
-          </div>
-        </td>
-
-        <td class="section-content">
-          <div class="section-title">MiniGLM</div>
-          <div class="section-second-title">
-            Natural Language Processing
-          </div>
-          <div class="section-details">
-            <span class="section-date">2023.9 ~ 2023.10</span>
-
-            <br />
-            In this project, we developed a MiniGPT model utilizing a transformer architecture. By leveraging the rich
-            narratives of
-            Jin Yong's wuxia novels, we aimed to capture the essence of these stories. We constructed specific Q/A pairs
-            to pretrain
-            and fine-tune the model, ensuring it could accurately respond to questions about Jin Yong's novels. This
-            approach not
-            only improved the model's comprehension but also enhanced its ability to generate precise answers related to
-            the themes
-            and characters of these iconic works.
-          </div>
-        </td>
-      </tr>
-
-
-    </table>
+      <article class="project">
+        <div class="project-media">
+          <img src="../../image/MiniGLM.jpg" alt="MiniGLM" loading="lazy" />
+        </div>
+        <div class="project-body">
+          <h2 class="project-title">MiniGLM</h2>
+          <p class="project-kicker">Natural Language Processing</p>
+          <p class="project-date">2023.9 – 2023.10</p>
+          <p class="project-desc">A MiniGPT-style transformer pretrained and fine-tuned on Q/A pairs from Jin Yong’s wuxia novels, so the model can answer questions about their themes and characters.</p>
+        </div>
+      </article>
     </div>
 
     <nav class="social-links" aria-label="Social links">
@@ -233,7 +127,7 @@
       <a href="https://xiaohongshu.com/user/profile/6374d185000000001f014a93" target="_blank" rel="noopener noreferrer">小红书</a>
       <a href="https://www.zhihu.com/people/song-jian-hao-72" target="_blank" rel="noopener noreferrer">知乎</a>
     </nav>
-  </div> 
+  </div>
 </body>
 
 </html>

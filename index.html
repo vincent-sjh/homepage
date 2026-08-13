@@ -9,27 +9,22 @@
   <link rel="icon" type="image/png" href="image/favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&family=Noto+Sans+SC:wght@400;500;600&family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="common.css" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
   <nav class="site-nav">
-    <div class="button-container">
-      <a href="./layout/research/research.html">
-        <div class="button"><span>Research</span></div>
-      </a>
-      <a href="./layout/program/program.html">
-        <div class="button"><span>Program</span></div>
-      </a>
-      <a href="./assets/CV.pdf">
-        <div class="button"><span>CV</span></div>
-      </a>
-      <a href="./layout/more/more.html">
-        <div class="button"><span>One more thing...</span></div>
-      </a>
+    <div class="nav-inner">
+      <a class="nav-brand" href="index.html">Jianhao Song</a>
+      <ul class="nav-links">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="./layout/research/research.html">Research</a></li>
+        <li><a href="./layout/program/program.html">Program</a></li>
+        <li><a href="./assets/CV.pdf">CV</a></li>
+        <li><a href="./layout/more/more.html">One more thing...</a></li>
+      </ul>
     </div>
   </nav>
 
@@ -37,11 +32,10 @@
     <section class="hero">
       <a href="layout/selfIntro/selfIntro.html" class="hero-photo">
         <img src="image/vincent.jpg" alt="Vincent's photo" />
-        <span class="hero-photo-label">Vincent</span>
       </a>
       <div class="hero-content">
         <h1 class="hero-name">Jianhao Song</h1>
-        <p class="hero-name-cn">宋建昊</p>
+        <p class="hero-name-cn">宋建昊 · Vincent</p>
         <div class="typed-container">
           <span id="index-typed" class="typed"></span>
         </div>
@@ -54,36 +48,57 @@
     </section>
 
     <div class="info-grid">
-      <section class="info-card">
-        <h2 class="info-card-title">Research Interests</h2>
+      <section>
+        <h2 class="section-label">Research Interests</h2>
         <ul class="info-list">
           <li>Causal Learning</li>
           <li>Out-of-Distribution Generalization</li>
         </ul>
       </section>
 
-      <section class="info-card">
-        <h2 class="info-card-title">Email</h2>
+      <section>
+        <h2 class="section-label">Email</h2>
         <ul class="info-list info-list--plain">
           <li><a href="mailto:songjianhao336@gmail.com">songjianhao336@gmail.com</a></li>
           <li><a href="mailto:244631919@qq.com">244631919@qq.com</a></li>
           <li><a href="mailto:songjh22@mails.tsinghua.edu.cn">songjh22@mails.tsinghua.edu.cn</a></li>
         </ul>
       </section>
-
-      <section class="info-card info-card--wide">
-        <h2 class="info-card-title">Honors and Awards</h2>
-        <ol class="awards-list">
-          <li>First prize at province level in the CNMO (China National Mathematics Olympiad) <span class="award-date">Nov. 2019</span></li>
-          <li>The top science student (ranked first) in the 2022 college entrance examination in Shenyang City <span class="award-date">Jun. 2022</span></li>
-          <li>Tsinghua University Freshmen Scholarship for Outstanding Students <span class="award-date">Oct. 2022–2025</span></li>
-          <li>ByteDance Trae SOLO Hackathon Outstanding Work Award <span class="award-date">Aug. 2025</span></li>
-          <li>First Prize in the OS Kernel Implementation Track, CSCC National Finals <span class="award-date">Aug. 2025</span></li>
-          <li>Tsinghua University Academic Excellence Scholarship <span class="award-date">Oct. 2025</span></li>
-          <li>Tsinghua University Science and Technology Innovation Scholarship <span class="award-date">Oct. 2025</span></li>
-        </ol>
-      </section>
     </div>
+
+    <section class="awards">
+      <h2 class="section-label">Honors and Awards</h2>
+      <ol class="awards-list">
+        <li>
+          <span class="award-date">Nov. 2019</span>
+          <span>First prize at province level in the CNMO (China National Mathematics Olympiad)</span>
+        </li>
+        <li>
+          <span class="award-date">Jun. 2022</span>
+          <span>The top science student (ranked first) in the 2022 college entrance examination in Shenyang City</span>
+        </li>
+        <li>
+          <span class="award-date">Oct. 2022–2025</span>
+          <span>Tsinghua University Freshmen Scholarship for Outstanding Students</span>
+        </li>
+        <li>
+          <span class="award-date">Aug. 2025</span>
+          <span>ByteDance Trae SOLO Hackathon Outstanding Work Award</span>
+        </li>
+        <li>
+          <span class="award-date">Aug. 2025</span>
+          <span>First Prize in the OS Kernel Implementation Track, CSCC National Finals</span>
+        </li>
+        <li>
+          <span class="award-date">Oct. 2025</span>
+          <span>Tsinghua University Academic Excellence Scholarship</span>
+        </li>
+        <li>
+          <span class="award-date">Oct. 2025</span>
+          <span>Tsinghua University Science and Technology Innovation Scholarship</span>
+        </li>
+      </ol>
+    </section>
 
     <nav class="social-links" aria-label="Social links">
       <a href="https://vincent-sjh.github.io/" target="_blank" rel="noopener noreferrer">Blogs</a>
