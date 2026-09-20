@@ -4,13 +4,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Research and industry experience of Jianhao Song (Vincent) — Tsinghua University, Non-Convex Technology, Stable AI." />
-  <title>Research — Vincent Homepage</title>
+  <meta name="description" content="Publications of Jianhao Song (Vincent) — LimiX-2 and related research at Tsinghua University and Stable AI." />
+  <title>Publication — Vincent Homepage</title>
   <link rel="icon" type="image/png" href="../../image/favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&family=Noto+Sans+SC:wght@400;500;600&family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../../common.css" />
+  <link rel="stylesheet" href="styles.css?v=3" />
 </head>
 
 <body>
@@ -19,7 +20,7 @@
       <a class="nav-brand" href="../../index.html">Jianhao Song</a>
       <ul class="nav-links">
         <li><a href="../../index.html">Home</a></li>
-        <li><a href="research.html" aria-current="page">Research</a></li>
+        <li><a href="research.html" aria-current="page">Publication</a></li>
         <li><a href="../program/program.html">Program</a></li>
         <li><a href="../../assets/CV.pdf">CV</a></li>
         <li><a href="../more/more.html">One more thing...</a></li>
@@ -27,10 +28,92 @@
     </div>
   </nav>
 
-  <div class="page">
+  <div class="page page--publication">
     <header class="page-header">
-      <h1 class="page-title">Research &amp; Experience</h1>
+      <h1 class="page-title">Publication</h1>
+      <p class="page-lede">Selected papers I have contributed to.</p>
     </header>
+
+    <section class="content-card" aria-labelledby="pub-limix2-title">
+      <article class="pub-card">
+        <div class="pub-top">
+          <img class="pub-logo" src="../../image/limix_icon.png?v=3" alt="LimiX" />
+          <div class="pub-heading">
+            <p class="pub-meta">
+              <span class="pub-venue">arXiv preprint</span>
+              <span class="pub-meta-sep" aria-hidden="true">·</span>
+              <time datetime="2026-09">Sep 2026</time>
+              <span class="pub-meta-sep" aria-hidden="true">·</span>
+              <span>2609.17488</span>
+            </p>
+            <h2 class="pub-title" id="pub-limix2-title">
+              LimiX-2: A Contextual Mechanism Network Towards General Structured-Data Intelligence
+            </h2>
+            <p class="pub-authors">
+              Xingxuan Zhang, Gang Ren, Hao Yuan, Hao Zou, Hongze Tan, Hui Wang,
+              <span class="pub-author-self">Jianhao Song</span>,
+              Jiansheng Li, et al.
+            </p>
+          </div>
+        </div>
+
+        <ul class="pub-metrics" aria-label="Benchmark results">
+          <li>
+            <span class="pub-metric-name">TabArena</span>
+            <span class="pub-metric-value">1935</span>
+            <span class="pub-metric-note">SOTA</span>
+          </li>
+          <li>
+            <span class="pub-metric-name">BCCO</span>
+            <span class="pub-metric-value">1432</span>
+            <span class="pub-metric-note">SOTA</span>
+          </li>
+          <li>
+            <span class="pub-metric-name">TALENT</span>
+            <span class="pub-metric-value">1506</span>
+            <span class="pub-metric-note">SOTA</span>
+          </li>
+          <li>
+            <span class="pub-metric-name">ScoringBench</span>
+            <span class="pub-metric-value">#1</span>
+            <span class="pub-metric-note">SOTA</span>
+          </li>
+        </ul>
+
+        <p class="pub-desc">
+          LimiX-2 is a 400M structured-data foundation model. One pretrained checkpoint covers classification, regression, and missing-value imputation, and ranks first on TabArena, BCCO, TALENT, and ScoringBench.
+        </p>
+
+        <div class="pub-actions">
+          <a class="pub-btn pub-btn--solid" href="https://arxiv.org/abs/2609.17488" target="_blank" rel="noopener noreferrer">
+            <svg class="pub-btn-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+              <polyline points="14 2 14 8 20 8" />
+            </svg>
+            Paper
+          </a>
+          <a class="pub-btn pub-btn--ghost" href="https://github.com/limix-ldm-ai/LimiX" target="_blank" rel="noopener noreferrer">
+            <svg class="pub-btn-icon" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+              <path d="M12 2C6.477 2 2 6.486 2 12.021c0 4.425 2.865 8.18 6.839 9.504.5.093.682-.217.682-.483 0-.237-.009-.866-.014-1.7-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.622.069-.61.069-.61 1.004.071 1.532 1.032 1.532 1.032.892 1.531 2.341 1.089 2.91.833.091-.647.35-1.089.636-1.34-2.22-.253-4.555-1.113-4.555-4.952 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.56 9.56 0 0 1 2.504.337c1.909-1.296 2.747-1.026 2.747-1.026.546 1.378.203 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.944.359.31.679.922.679 1.859 0 1.341-.012 2.422-.012 2.751 0 .268.18.58.688.481C19.138 20.197 22 16.444 22 12.021 22 6.486 17.523 2 12 2z" />
+            </svg>
+            Code
+          </a>
+          <a class="pub-btn pub-btn--ghost" href="https://huggingface.co/stable-ai/LimiX-2" target="_blank" rel="noopener noreferrer">
+            <svg class="pub-btn-icon" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+              <path d="M12 2a7.5 7.5 0 0 0-7.5 7.5v.4A5.5 5.5 0 0 0 4 20.5h4.2a2.8 2.8 0 0 0 5.6 0H20a5.5 5.5 0 0 0-.5-10.6A7.5 7.5 0 0 0 12 2zm-3.1 9.2a1.15 1.15 0 1 1 0 2.3 1.15 1.15 0 0 1 0-2.3zm6.2 0a1.15 1.15 0 1 1 0 2.3 1.15 1.15 0 0 1 0-2.3zM8.7 15.1c.7 1.1 1.9 1.8 3.3 1.8s2.6-.7 3.3-1.8" />
+            </svg>
+            Hugging Face
+          </a>
+          <a class="pub-btn pub-btn--ghost" href="https://www.modelscope.cn/models/stable-ai/LimiX-2" target="_blank" rel="noopener noreferrer">
+            <svg class="pub-btn-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 3 4.5 7.5v9L12 21l7.5-4.5v-9L12 3z" />
+              <path d="M12 12 4.5 7.5M12 12v9M12 12l7.5-4.5" />
+            </svg>
+            ModelScope
+          </a>
+        </div>
+      </article>
+    </section>
 
     <section class="content-card">
       <h2 class="section-label">Education</h2>

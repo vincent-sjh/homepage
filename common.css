@@ -118,7 +118,8 @@ a:hover {
 .entry-subtitle a:focus-visible,
 .project-title a:focus-visible,
 .project-desc a:focus-visible,
-.project-kicker a:focus-visible {
+.project-kicker a:focus-visible,
+.pub-btn:focus-visible {
   outline: 2px solid var(--focus);
   outline-offset: 3px;
 }
