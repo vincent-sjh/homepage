@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
+  <script src="../../theme.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="About Jianhao Song (Vincent) — innovator, explorer, and builder." />
   <title>About — Vincent Homepage</title>
@@ -12,52 +13,61 @@
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&family=Noto+Sans+SC:wght@400;500;600&family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../../common.css" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="../../enhancements.css" />
+  <script src="../../script.js" defer></script>
 </head>
 
 <body>
-  <nav class="site-nav">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <nav class="site-nav" aria-label="Main navigation">
     <div class="nav-inner">
       <a class="nav-brand" href="../../index.html">Jianhao Song</a>
       <ul class="nav-links">
         <li><a href="../../index.html">Home</a></li>
-        <li><a href="../research/research.html">Publication</a></li>
-        <li><a href="../program/program.html">Program</a></li>
+        <li><a href="../research/research.html">Publications</a></li>
+        <li><a href="../program/program.html">Projects</a></li>
         <li><a href="../../assets/CV.pdf">CV</a></li>
-        <li><a href="../more/more.html">One more thing...</a></li>
+        <li><a href="../more/more.html">More</a></li>
       </ul>
     </div>
   </nav>
 
-  <div class="page">
+  <main id="main-content" class="page page--about">
+    <header class="page-header" data-reveal>
+      <p class="section-label">A little about me</p>
+      <h1 class="page-title">Jianhao Song<span class="title-dot" aria-hidden="true">.</span></h1>
+      <p class="about-name"><span lang="zh">宋建昊</span><span aria-hidden="true">/</span><span>Vincent</span></p>
+    </header>
     <div class="self-intro">
-      <img src="../../image/selfIntro.jpg" alt="Jianhao Song's photo" />
-      <h1 class="bodyBigtext">Jianhao Song</h1>
-      <p class="bodyChineseBigtext">宋建昊</p>
-      <p class="bodyMidtext">Vincent</p>
-      <p class="bodytext">
-        Hi 👋! Great to see you here!
-        <br />
-        I'm an innovator, explorer and builder. I am not content to learn and just imitate the knowledge and skills that
-        already exist,
-        but crazy about creating something new, which echoes what Greek philosopher Socrates said 2500 years ago,
-        "Education
-        is a kindling of a flame, not a filling of a vessel". I love that what I do really changes the world, and
-        creating is a way
-        for me to interact with this world and find myself.
-      </p>
-      <nav class="social-links social-links--on-card" aria-label="Social links">
-        <a href="https://vincent-sjh.github.io/" target="_blank" rel="noopener noreferrer">Blogs</a>
+      <figure class="about-portrait" data-reveal>
+        <img src="../../image/selfIntro.jpg" alt="Jianhao Song under a canopy of trees" width="1080" height="1080" decoding="async" />
+        <figcaption><span class="portrait-name">Jianhao Song · Vincent</span><span>Innovator. Explorer. Builder.</span></figcaption>
+      </figure>
+      <div class="about-story" data-reveal>
+        <p class="about-greeting">Hi <span aria-hidden="true">👋</span>! Great to see you here!</p>
+        <p class="bodytext">I'm an innovator, explorer and builder. I am not content to learn and just imitate the knowledge and skills that already exist, but crazy about creating something new, which echoes what Greek philosopher Socrates said 2500 years ago,</p>
+        <blockquote class="about-quote"><span class="about-quote-mark" aria-hidden="true">“</span><p>Education is a kindling of a flame, not a filling of a vessel.</p></blockquote>
+        <p class="bodytext">I love that what I do really changes the world, and creating is a way for me to interact with this world and find myself.</p>
+        <div class="about-signoff"><p>Stay curious. Keep building.</p><span>— Vincent</span></div>
+        <a class="about-projects" href="../program/program.html">Explore my projects <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+      <nav class="social-links" aria-label="Social links">
+        <a href="https://vincent-sjh.github.io/" target="_blank" rel="noopener noreferrer">Blog</a>
         <a href="https://x.com/si57311" target="_blank" rel="noopener noreferrer">X</a>
-        <a href="https://github.com/vincent-sjh" target="_blank" rel="noopener noreferrer">Github</a>
-        <a href="https://huggingface.co/Vincentyyy" target="_blank" rel="noopener noreferrer">Huggingface</a>
+        <a href="https://github.com/vincent-sjh" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://huggingface.co/Vincentyyy" target="_blank" rel="noopener noreferrer">Hugging Face</a>
         <a href="https://www.youtube.com/@Vincentyyy_AI_Lab" target="_blank" rel="noopener noreferrer">YouTube</a>
         <a href="https://www.douyin.com/user/MS4wLjABAAAAsZm0FWHsuGoWPQdqmWfrBVfKztMxsH9bJJvjDs2BDYE" target="_blank" rel="noopener noreferrer">抖音</a>
         <a href="https://space.bilibili.com/3690994966989729" target="_blank" rel="noopener noreferrer">Bilibili</a>
         <a href="https://xiaohongshu.com/user/profile/6374d185000000001f014a93" target="_blank" rel="noopener noreferrer">小红书</a>
         <a href="https://www.zhihu.com/people/song-jian-hao-72" target="_blank" rel="noopener noreferrer">知乎</a>
       </nav>
-    </div>
-  </div>
+    <footer class="site-footer">
+      <p>Jianhao Song · 宋建昊</p>
+      <a href="../../index.html">Back to home <span aria-hidden="true">↗</span></a>
+    </footer>
+  </main>
 </body>
 
 </html>

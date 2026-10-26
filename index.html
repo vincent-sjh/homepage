@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
+  <script src="theme.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Jianhao Song (Vincent) — CS undergraduate at Tsinghua University. Research interests in causal learning and OOD generalization." />
   <title>Jianhao Song — Vincent Homepage</title>
@@ -12,155 +13,164 @@
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&family=Noto+Sans+SC:wght@400;500;600&family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="common.css" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="enhancements.css" />
+  <meta name="theme-color" content="#f7f7f2" />
+  <script src="script.js" defer></script>
 </head>
 
 <body>
-  <nav class="site-nav">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <nav class="site-nav" aria-label="Main navigation">
     <div class="nav-inner">
       <a class="nav-brand" href="index.html">Jianhao Song</a>
       <ul class="nav-links">
         <li><a href="index.html" aria-current="page">Home</a></li>
-        <li><a href="./layout/research/research.html">Publication</a></li>
-        <li><a href="./layout/program/program.html">Program</a></li>
-        <li><a href="./assets/CV.pdf">CV</a></li>
-        <li><a href="./layout/more/more.html">One more thing...</a></li>
+        <li><a href="layout/research/research.html">Publications</a></li>
+        <li><a href="layout/program/program.html">Projects</a></li>
+        <li><a href="assets/CV.pdf">CV</a></li>
+        <li><a href="layout/more/more.html">More</a></li>
       </ul>
     </div>
   </nav>
 
-  <div class="page" id="page1">
-    <section class="hero">
-      <a href="layout/selfIntro/selfIntro.html" class="hero-photo">
-        <img src="image/vincent.jpg" alt="Vincent's photo" />
-      </a>
-      <div class="hero-content">
-        <h1 class="hero-name">Jianhao Song</h1>
-        <p class="hero-name-cn">宋建昊 · Vincent</p>
-        <div class="typed-container">
-          <span id="index-typed" class="typed"></span>
+  <main class="page home-page" id="main-content">
+    <section class="hero" id="intro" aria-labelledby="hero-name">
+      <div class="hero-content" data-reveal>
+        <p class="eyebrow hero-eyebrow">Computer Science · Tsinghua University</p>
+        <h1 class="hero-name" id="hero-name">Jianhao <span>Song<i>.</i></span></h1>
+        <p class="hero-name-cn"><span lang="zh-CN">宋建昊</span><span class="name-divider" aria-hidden="true"></span> You can call me Vincent</p>
+        <p class="hero-intro">An <strong>innovator, explorer &amp; builder.</strong><br />Turning curiosity into ideas, and ideas into things that matter.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="layout/program/program.html">Explore my work <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+          <a class="button button-secondary" href="layout/selfIntro/selfIntro.html">A little about me</a>
         </div>
-        <p class="hero-intro">
-          Hi 👋! Great to see you here! I am a senior undergraduate student from Tsinghua University majoring in Computer Science and Technology.
-          I'm an innovator, explorer and builder. I am crazy about creating something new, which echoes what Greek philosopher Socrates said 2500 years ago,
-          "Education is a kindling of a flame, not a filling of a vessel". I love that what I do really changes the world, and coding is a way for me to interact with this world.
-        </p>
+      </div>
+      <div class="hero-visual" data-reveal>
+        <a href="layout/selfIntro/selfIntro.html" class="hero-photo" aria-label="More about Jianhao Song">
+          <img src="image/vincent.jpg" width="1169" height="1179" alt="Portrait of Jianhao Song" fetchpriority="high" />
+          <span class="photo-link" aria-hidden="true">↗</span>
+        </a>
+        <div class="hero-note"><span aria-hidden="true">✳</span> Always stay curious.</div>
+        <p class="photo-caption"><span>Beijing, China</span><span class="caption-line" aria-hidden="true"></span><span>A work in progress</span></p>
       </div>
     </section>
 
-    <div class="info-grid">
-      <section>
-        <h2 class="section-label">Research Interests</h2>
-        <ul class="info-list">
-          <li>Causal Learning</li>
-          <li>Out-of-Distribution Generalization</li>
-        </ul>
-      </section>
+    <nav class="section-nav" aria-label="On this page">
+      <span class="section-nav-label">On this page</span>
+      <a href="#about">About</a><a href="#work">Selected work</a><a href="#recognition">Recognition</a><a href="#contact">Contact</a>
+    </nav>
 
-      <section>
-        <h2 class="section-label">Email</h2>
-        <ul class="info-list info-list--plain">
-          <li><a href="mailto:songjianhao336@gmail.com">songjianhao336@gmail.com</a></li>
-          <li><a href="mailto:244631919@qq.com">244631919@qq.com</a></li>
-          <li><a href="mailto:songjh22@mails.tsinghua.edu.cn">songjh22@mails.tsinghua.edu.cn</a></li>
-        </ul>
-      </section>
+    <div class="thought-strip" data-reveal>
+      <span class="thought-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M5 7h5v6H6v4H3v-6l2-4Zm11 0h5v6h-4v4h-3v-6l2-4Z"/></svg>A thought in passing</span>
+      <div class="typed-container">
+        <span class="typed-sizing" aria-hidden="true">Education is a kindling of a flame, not a filling of a vessel.</span>
+        <span id="index-typed" class="typed" aria-hidden="true">永远相信美好的事情即将发生。</span>
+        <span class="sr-only">永远相信美好的事情即将发生。</span>
+      </div>
+      <span class="thought-index" aria-hidden="true">01 / 13</span>
     </div>
 
-    <section class="awards">
-      <h2 class="section-label">Honors and Awards</h2>
+    <section class="about-grid" id="about" aria-label="About and research interests">
+      <div class="about-copy" data-reveal>
+        <h2 class="section-label"><span class="section-number">01 /</span> A little introduction</h2>
+        <p>Hi, great to see you here! I’m a senior undergraduate at Tsinghua University, majoring in Computer Science and Technology.</p>
+        <p>I’m drawn to creating something new. I believe that education is a kindling of a flame, not a filling of a vessel. I love that what I do can change the world — and coding is my way of interacting with it.</p>
+        <a class="text-link" href="layout/selfIntro/selfIntro.html">More of my story <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="research-interests" data-reveal>
+        <h2 class="section-label">What I’m thinking about</h2>
+        <div class="interest-item">
+          <span class="interest-index" aria-hidden="true">01</span><h3>Causal Learning</h3>
+          <p>Looking beyond correlations to understand the mechanisms behind the data.</p>
+          <ul class="topic-tags" aria-label="Causal learning topics"><li>Cause &amp; effect</li><li>Mechanisms</li></ul>
+        </div>
+        <div class="interest-item">
+          <span class="interest-index" aria-hidden="true">02</span><h3>Out-of-Distribution<br />Generalization</h3>
+          <p>Exploring how learning systems can generalize beyond what they have seen.</p>
+          <ul class="topic-tags" aria-label="Generalization topics"><li>Distribution shift</li><li>Generalization</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="work-section" id="work" aria-labelledby="work-title" data-reveal>
+      <div class="section-heading">
+        <div><p class="section-label"><span class="section-number">02 /</span> From ideas to reality</p><h2 class="section-title" id="work-title">Things I’ve worked on.</h2></div>
+      </div>
+      <div class="work-grid">
+        <a class="work-card" href="layout/research/research.html">
+          <div class="work-card-top"><span class="work-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 9 5-9 5-9-5 9-5Zm-9 9 9 5 9-5M3 16l9 5 9-5"/></svg></span><span class="work-category">Research · 2026</span></div>
+          <div class="work-preview work-preview--research"><img src="image/limix_icon.png" width="76" height="76" alt="LimiX logo" loading="lazy" /><span>Context.<br /><em>Mechanism.</em><br />Intelligence.</span></div>
+          <h3>LimiX-2</h3>
+          <p>A contextual mechanism network towards general structured-data intelligence.</p>
+          <span class="text-link">Explore the research <span aria-hidden="true">↗</span></span>
+        </a>
+        <a class="work-card" href="layout/program/program.html">
+          <div class="work-card-top"><span class="work-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="m7 9 3 3-3 3m6 0h4"/></svg></span><span class="work-category">Systems · 2025</span></div>
+          <div class="work-preview work-preview--systems"><img src="image/undefined.jpg" width="100" height="100" alt="Undefined-OS logo" loading="lazy" /><span class="code-preview" aria-hidden="true"><span class="code-comment">// built from the kernel up</span><br /><span>use</span> curiosity::<em>build</em>;<br /><span>fn</span> main() { <em>explore</em>(); }</span></div>
+          <h3>Undefined-OS</h3>
+          <p>A Linux-like, componentized kernel in Rust. First Prize at the CSCC National Finals.</p>
+          <span class="text-link">Explore the projects <span aria-hidden="true">↗</span></span>
+        </a>
+      </div>
+    </section>
+
+    <section class="awards" id="recognition" aria-labelledby="awards-title" data-reveal>
+      <div class="awards-header">
+        <p class="section-label"><span class="section-number">03 /</span> Along the way</p>
+        <h2 class="section-title" id="awards-title">Honors &amp;<br />milestones.</h2>
+        <p>A few meaningful moments in a continuing journey.</p>
+      </div>
       <ol class="awards-list">
-        <li>
-          <span class="award-date">Nov. 2019</span>
-          <span>First prize at province level in the CNMO (China National Mathematics Olympiad)</span>
-        </li>
-        <li>
-          <span class="award-date">Jun. 2022</span>
-          <span>The top science student (ranked first) in the 2022 college entrance examination in Shenyang City</span>
-        </li>
-        <li>
-          <span class="award-date">Oct. 2022–2025</span>
-          <span>Tsinghua University Freshmen Scholarship for Outstanding Students</span>
-        </li>
-        <li>
-          <span class="award-date">Aug. 2025</span>
-          <span>ByteDance Trae SOLO Hackathon Outstanding Work Award</span>
-        </li>
-        <li>
-          <span class="award-date">Aug. 2025</span>
-          <span>First Prize in the OS Kernel Implementation Track, CSCC National Finals</span>
-        </li>
-        <li>
-          <span class="award-date">Oct. 2025</span>
-          <span>Tsinghua University Academic Excellence Scholarship</span>
-        </li>
-        <li>
+<li>
           <span class="award-date">Oct. 2025</span>
           <span>Tsinghua University Science and Technology Innovation Scholarship</span>
         </li>
-      </ol>
+<li>
+          <span class="award-date">Oct. 2025</span>
+          <span>Tsinghua University Academic Excellence Scholarship</span>
+        </li>
+<li>
+          <span class="award-date">Aug. 2025</span>
+          <span>First Prize in the OS Kernel Implementation Track, CSCC National Finals</span>
+        </li>
+<li>
+          <span class="award-date">Aug. 2025</span>
+          <span>ByteDance Trae SOLO Hackathon Outstanding Work Award</span>
+        </li>
+<li>
+          <span class="award-date">Oct. 2022–2025</span>
+          <span>Tsinghua University Freshmen Scholarship for Outstanding Students</span>
+        </li>
+<li>
+          <span class="award-date">Jun. 2022</span>
+          <span>The top science student (ranked first) in the 2022 college entrance examination in Shenyang City</span>
+        </li>
+<li>
+          <span class="award-date">Nov. 2019</span>
+          <span>First prize at province level in the CNMO (China National Mathematics Olympiad)</span>
+        </li>
+</ol>
+    </section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-title" data-reveal>
+      <div><p class="section-label">A conversation starts here</p><h2 class="section-title" id="contact-title">Let’s connect.</h2><p>Ideas, research, or just a hello.</p></div>
+      <ul class="email-list"><li class="email-primary"><div class="email-details"><span class="email-label">Say hello · Primary</span><a href="mailto:songjianhao336@gmail.com">songjianhao336@gmail.com</a></div><button class="copy-email" type="button" data-copy="songjianhao336@gmail.com" aria-label="Copy songjianhao336@gmail.com" title="Copy email address"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"/></svg></button></li>
+<li><div class="email-details"><span class="email-label">Alternative</span><a href="mailto:244631919@qq.com">244631919@qq.com</a></div><button class="copy-email" type="button" data-copy="244631919@qq.com" aria-label="Copy 244631919@qq.com" title="Copy email address"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"/></svg></button></li>
+<li><div class="email-details"><span class="email-label">University</span><a href="mailto:songjh22@mails.tsinghua.edu.cn">songjh22@mails.tsinghua.edu.cn</a></div><button class="copy-email" type="button" data-copy="songjh22@mails.tsinghua.edu.cn" aria-label="Copy songjh22@mails.tsinghua.edu.cn" title="Copy email address"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"/></svg></button></li></ul>
     </section>
 
     <nav class="social-links" aria-label="Social links">
-      <a href="https://vincent-sjh.github.io/" target="_blank" rel="noopener noreferrer">Blogs</a>
+      <a href="https://vincent-sjh.github.io/" target="_blank" rel="noopener noreferrer">Blog</a>
       <a href="https://x.com/si57311" target="_blank" rel="noopener noreferrer">X</a>
-      <a href="https://github.com/vincent-sjh" target="_blank" rel="noopener noreferrer">Github</a>
-      <a href="https://huggingface.co/Vincentyyy" target="_blank" rel="noopener noreferrer">Huggingface</a>
+      <a href="https://github.com/vincent-sjh" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://huggingface.co/Vincentyyy" target="_blank" rel="noopener noreferrer">Hugging Face</a>
       <a href="https://www.youtube.com/@Vincentyyy_AI_Lab" target="_blank" rel="noopener noreferrer">YouTube</a>
       <a href="https://www.douyin.com/user/MS4wLjABAAAAsZm0FWHsuGoWPQdqmWfrBVfKztMxsH9bJJvjDs2BDYE" target="_blank" rel="noopener noreferrer">抖音</a>
       <a href="https://space.bilibili.com/3690994966989729" target="_blank" rel="noopener noreferrer">Bilibili</a>
       <a href="https://xiaohongshu.com/user/profile/6374d185000000001f014a93" target="_blank" rel="noopener noreferrer">小红书</a>
       <a href="https://www.zhihu.com/people/song-jian-hao-72" target="_blank" rel="noopener noreferrer">知乎</a>
     </nav>
-  </div>
-
-  <script>
-    (function () {
-      const phrases = [
-        "别感冒，别多想。",
-        "永远相信美好的事情即将发生。",
-        "We'll paint the world with our colors and everyone will know.",
-        "SJH ❤ ZYT.",
-        "Talk is cheap, show me the code.",
-        "Education is a kindling of a flame, not a filling of a vessel.",
-        "Gumayusi is the greatest ADC in the world!",
-        "Stay hungry, stay foolish.",
-        "没有引力的世界，没有脚印的光年。",
-        "I once was lost, but now I'm found.",
-        "Patience is key in life.",
-        "Damian Lillard got a shot!",
-        "关键的问题是问题的关键。"
-      ];
-      const TYPING_SPEED = 150;
-      const BACKSPACE_SPEED = 40;
-      const PAUSE_AFTER_FULL = 2000;
-      const el = document.getElementById('index-typed');
-      function wait(ms) { return new Promise(r => setTimeout(r, ms)); }
-      async function typeText(text) {
-        for (let i = 0; i < text.length; i++) { el.textContent += text[i]; await wait(TYPING_SPEED); }
-      }
-      async function backspaceText(n) {
-        for (let i = 0; i < n; i++) { el.textContent = el.textContent.slice(0, -1); await wait(BACKSPACE_SPEED); }
-      }
-      async function loop() {
-        let i = 0;
-        while (true) {
-          const p = phrases[i];
-          await typeText(p);
-          await wait(PAUSE_AFTER_FULL);
-          await backspaceText(p.length);
-          await wait(400);
-          i = (i + 1) % phrases.length;
-        }
-      }
-      document.addEventListener('DOMContentLoaded', () => {
-        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-          el.textContent = phrases[0];
-          return;
-        }
-        setTimeout(loop, 300);
-      });
-    })();
-  </script>
+    <footer class="site-footer"><p>Jianhao Song <span aria-hidden="true">·</span> 宋建昊</p><p class="footer-note">Stay curious. Keep building.</p></footer>
+  </main>
 </body>
-
 </html>
